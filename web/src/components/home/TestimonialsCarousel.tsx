@@ -3,7 +3,7 @@
 import React from "react";
 import { ShieldCheck, HeartHandshake, Clock, FileText, Star, MessageSquare } from "lucide-react";
 import Link from "next/link";
-import { SITE_CONFIG } from "@/config/site";
+import { SITE_CONFIG, CONFIG_FLAGS } from "@/config/site";
 
 const standards = [
   {
@@ -14,11 +14,16 @@ const standards = [
       "Every passenger boards via a clean rear ramp or hydraulic lift. We take the time required to securely fasten all 4-point floor tie-downs and fit safety belts without rushing.",
   },
   {
-    title: "NDIS & PTSS Transparent Billing",
+    title: CONFIG_FLAGS.ptssSubsidyAccepted && CONFIG_FLAGS.ndisBillingAccepted
+      ? "NDIS & PTSS Transparent Billing"
+      : "Transparent Fare Invoicing",
     icon: FileText,
-    category: "Subsidies & Invoicing",
-    description:
-      "We support WA PTSS smartcards (effective 1 Oct 2025 replacing paper TUSS vouchers) and supply itemised tax invoices for NDIS participants [TODO: owner to confirm licence/registration].",
+    category: CONFIG_FLAGS.ptssSubsidyAccepted && CONFIG_FLAGS.ndisBillingAccepted
+      ? "Subsidies & Invoicing"
+      : "Pricing & Invoicing",
+    description: CONFIG_FLAGS.ptssSubsidyAccepted && CONFIG_FLAGS.ndisBillingAccepted
+      ? "We support WA PTSS smartcards (replacing paper TUSS vouchers) and supply itemised tax invoices for NDIS participants."
+      : "Clear meter tariffs or upfront agreed fixed quotes. We provide itemised tax receipts with date, vehicle details, and registered ABN on every trip.",
   },
   {
     title: "Punctual Advance Bookings",

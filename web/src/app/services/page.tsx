@@ -65,13 +65,19 @@ const servicesList = [
     badgeText: "24/7",
   },
   {
-    title: "NDIS & Medical Transport",
-    tagline: "NDIS · WA PTSS · Hospitals",
+    title: "Medical & Clinic Transport",
+    tagline: CONFIG_FLAGS.ptssSubsidyAccepted && CONFIG_FLAGS.ndisBillingAccepted
+      ? "NDIS · WA PTSS · Hospitals"
+      : "Hospitals · Clinics · Therapy",
     iconName: "HeartPulse" as const,
     gradient: "rose" as const,
-    features: ["Hospital Transfers", "WA PTSS Smartcards", "Itemised NDIS Invoices"],
+    features: CONFIG_FLAGS.ptssSubsidyAccepted && CONFIG_FLAGS.ndisBillingAccepted
+      ? ["Hospital Transfers", "WA PTSS Smartcards", "Itemised NDIS Invoices"]
+      : ["Hospital Transfers", "Dialysis & Therapy", "Itemised Tax Receipts"],
     serviceHref: "/services/medical-ndis-transport",
-    badgeText: "NDIS",
+    badgeText: CONFIG_FLAGS.ptssSubsidyAccepted && CONFIG_FLAGS.ndisBillingAccepted
+      ? "NDIS"
+      : "Medical",
   },
   {
     title: "Group Maxi Cab",
@@ -114,8 +120,16 @@ const servicesList = [
 const stats = [
   { value: "24/7", label: "Open 24/7", icon: Clock },
   { value: "10", label: "Max Passengers", icon: Users },
-  { value: "PTSS", label: "Smartcard (ex-TUSS)", icon: Star },
-  { value: "NDIS", label: "Invoices Provided", icon: ShieldCheck },
+  {
+    value: CONFIG_FLAGS.ptssSubsidyAccepted ? "PTSS" : "WAT",
+    label: CONFIG_FLAGS.ptssSubsidyAccepted ? "Smartcard (ex-TUSS)" : "Wheelchair Accessible",
+    icon: Star,
+  },
+  {
+    value: CONFIG_FLAGS.ndisBillingAccepted ? "NDIS" : "Direct",
+    label: CONFIG_FLAGS.ndisBillingAccepted ? "Invoices Provided" : "Driver Dispatch",
+    icon: ShieldCheck,
+  },
 ];
 
 const breadcrumbSchema = {

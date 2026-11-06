@@ -93,7 +93,7 @@ export default function HowToUsePTSSPage() {
 
           <div className="p-5 sm:p-6 bg-zinc-950 border-2 border-emerald-500/40 rounded-2xl mb-4">
             <p className="text-sm sm:text-base text-zinc-200 leading-relaxed font-normal">
-              <strong>Crucial Policy Update:</strong> Per the Western Australia Department of Transport (DoT), paper <strong>Taxi User Subsidy Scheme (TUSS) vouchers can no longer be used in taxis from 1 October 2025</strong>. All participants transition to an electronic <strong>Passenger Transport Subsidy Scheme (PTSS) smartcard</strong>. Eligible travellers receive either a 50% standard subsidy (capped at $25 per trip) or a 75% wheelchair subsidy (capped at $35 per trip in an authorized wheelchair-accessible taxi).
+              <strong>Crucial Policy Update:</strong> Per the Western Australia Department of Transport (DoT), WA-issued paper <strong>Taxi User Subsidy Scheme (TUSS) vouchers can no longer be used in taxis from 1 October 2025</strong>. WA participants transition to an electronic <strong>Passenger Transport Subsidy Scheme (PTSS) smartcard</strong>. Eligible travellers receive either a 50% standard subsidy (capped at $25 per trip) or a 75% wheelchair subsidy (capped at $35 per trip in an authorized wheelchair-accessible taxi). Eligible interstate visitors holding valid paper vouchers from their home state or territory reciprocal scheme may still use them in WA taxis.
             </p>
           </div>
         </SlideUp>
@@ -105,10 +105,10 @@ export default function HowToUsePTSSPage() {
           <AlertCircle className="w-5 h-5 text-amber-400 shrink-0 mt-0.5" aria-hidden="true" />
           <div>
             <h2 className="text-sm font-black text-amber-300 uppercase tracking-wide">
-              Notice: TUSS Paper Vouchers Phased Out
+              Notice: WA TUSS Vouchers Phased Out &bull; Interstate Paper Vouchers Still Accepted
             </h2>
             <p className="text-xs text-zinc-300 mt-1 leading-relaxed">
-              Paper TUSS voucher booklets were retired on 1 October 2025. If you hold old paper vouchers, contact the WA Department of Transport to ensure your PTSS smartcard has been activated before booking on-demand transport.
+              Western Australia paper TUSS voucher booklets were retired on 1 October 2025 in favour of the PTSS smartcard. <strong>Interstate Exception:</strong> Under national reciprocal subsidy agreements, interstate travellers visiting WA who hold valid paper taxi subsidy vouchers issued by their home state or territory (e.g. NSW TTSS, Victoria TSS, Queensland TSS, SA SATSS, Tasmania, ACT, or NT) can continue to use their paper vouchers in WA taxis.
             </p>
             <a
               href="https://www.transport.wa.gov.au/taxis-on-demand-transport/passenger-transport-subsidy-scheme-ptss.asp"
@@ -116,7 +116,7 @@ export default function HowToUsePTSSPage() {
               rel="noopener noreferrer"
               className="inline-flex items-center gap-1.5 text-xs text-amber-400 hover:text-amber-300 font-bold mt-2 underline underline-offset-4"
             >
-              <span>View official WA DoT PTSS transition details</span>
+              <span>View official WA DoT PTSS transition &amp; interstate guidance</span>
               <ExternalLink className="w-3.5 h-3.5" aria-hidden="true" />
             </a>
           </div>
@@ -129,9 +129,14 @@ export default function HowToUsePTSSPage() {
           <p className="mb-3">
             The Passenger Transport Subsidy Scheme (PTSS, formerly known as TUSS) is administered by the <strong>Western Australia Department of Transport (DoT)</strong>. It provides subsidized taxi travel for Western Australian residents with permanent disabilities that prevent them from accessing conventional public bus or train networks.
           </p>
-          <p>
-            Instead of carrying physical paper voucher booklets, members now use a secure PTSS chip/tap card that is processed through authorized point-of-sale payment terminals inside registered on-demand passenger transport vehicles.
+          <p className="mb-3">
+            Instead of carrying physical paper voucher booklets, WA members now use a secure PTSS chip/tap card. Authorized drivers and transport operators can process PTSS transactions through multiple Department of Transport supported methods:
           </p>
+          <ul className="list-disc pl-5 space-y-1.5 text-zinc-300 text-xs sm:text-sm">
+            <li><strong>Approved in-vehicle EFTPOS smartcard payment terminals</strong> configured for PTSS card processing.</li>
+            <li><strong>The official WA DoT PTSS driver mobile application / web portal</strong>, allowing secure digital validation without requiring proprietary terminal hardware.</li>
+            <li><strong>Dispatch and booking management systems</strong> integrated directly with the Department of Transport PTSS API.</li>
+          </ul>
         </div>
 
         <div>
@@ -165,19 +170,19 @@ export default function HowToUsePTSSPage() {
           <ol className="space-y-3 pl-2">
             <li className="flex items-start gap-3">
               <span className="w-6 h-6 rounded-full bg-amber-400 text-black font-black text-xs flex items-center justify-center shrink-0 mt-0.5">1</span>
-              <span><strong>Book in Advance:</strong> When reserving via phone or WhatsApp, inform dispatch that you intend to use a PTSS card so the driver can ensure an active, authorized terminal is ready.</span>
+              <span><strong>Book in Advance:</strong> When reserving via phone or WhatsApp, inform dispatch that you intend to use a PTSS card (or reciprocal interstate voucher) so the driver is prepared to process the subsidy.</span>
             </li>
             <li className="flex items-start gap-3">
               <span className="w-6 h-6 rounded-full bg-amber-400 text-black font-black text-xs flex items-center justify-center shrink-0 mt-0.5">2</span>
-              <span><strong>Carry Your Card:</strong> The approved PTSS cardholder must be present in the vehicle for the duration of the journey. Cards cannot be transferred or loaned to others.</span>
+              <span><strong>Carry Your Card or Voucher:</strong> The approved cardholder must travel in the vehicle for the duration of the journey. Cards and vouchers cannot be transferred or loaned to others.</span>
             </li>
             <li className="flex items-start gap-3">
               <span className="w-6 h-6 rounded-full bg-amber-400 text-black font-black text-xs flex items-center justify-center shrink-0 mt-0.5">3</span>
-              <span><strong>Card Tap / Processing:</strong> At your destination, tap or insert your PTSS card into the driver&apos;s approved terminal. The terminal calculates and applies the 50% or 75% government subsidy up to the $25 or $35 cap.</span>
+              <span><strong>Processing Subsidy:</strong> At your destination, the driver processes your PTSS card via an approved payment terminal, the official PTSS driver app, or integrated dispatch software (or endorses an interstate paper voucher). The 50% or 75% government subsidy is applied up to the regulated cap ($25 or $35).</span>
             </li>
             <li className="flex items-start gap-3">
               <span className="w-6 h-6 rounded-full bg-amber-400 text-black font-black text-xs flex items-center justify-center shrink-0 mt-0.5">4</span>
-              <span><strong>Pay Remaining Co-Payment:</strong> Settle the balance with debit/credit card, EFTPOS, or cash.</span>
+              <span><strong>Pay Remaining Co-Payment:</strong> Settle the remaining balance with debit/credit card, EFTPOS, or cash.</span>
             </li>
           </ol>
         </div>
@@ -210,7 +215,7 @@ export default function HowToUsePTSSPage() {
             <p className="text-xs text-zinc-400 mt-1">
               {CONFIG_FLAGS.ptssSubsidyAccepted
                 ? "We accept WA PTSS smartcards across Greater Perth 24 hours a day."
-                : "Accessible taxi vans available 24/7 across Perth metropolitan areas. Note: PTSS card terminal acceptance pending final owner licence confirmation."}
+                : "Accessible taxi vans available 24/7 across Perth metropolitan areas. Note: PTSS subsidy processing and onboarding status are pending final owner licence confirmation."}
             </p>
           </div>
           <Link

@@ -8,16 +8,16 @@ import { SUBURBS_DATA } from "@/config/suburbs-data";
 import { SITE_URL, SITE_CONFIG } from "@/config/site";
 
 export const metadata: Metadata = {
-  title: "Wheelchair Taxi Service Areas Perth | 20km Girrawheen",
+  title: "Wheelchair Taxi Service Areas Perth | Girrawheen Base & Metro",
   description:
-    "Perth wheelchair accessible taxi and 10-seater maxi cab service coverage. Connecting 20 major hubs within 20 km of Girrawheen base. Book 24/7 on +61 493 252 766.",
+    "Perth wheelchair accessible taxi and 10-seater maxi cab service coverage. Primary 20 km radius around Girrawheen base plus extended corridors including Fremantle, Perth Hills, and Perth Airport. Book 24/7 on +61 493 252 766.",
   alternates: {
     canonical: `${SITE_URL}/locations`,
   },
   openGraph: {
-    title: "Wheelchair Taxi Service Areas Perth | 20km Girrawheen",
+    title: "Wheelchair Taxi Service Areas Perth | Girrawheen Base & Metro",
     description:
-      "Perth wheelchair accessible taxi and 10-seater maxi cab service coverage. Connecting 20 major hubs within 20 km of Girrawheen base. Book 24/7 on +61 493 252 766.",
+      "Perth wheelchair accessible taxi and 10-seater maxi cab service coverage. Primary 20 km radius around Girrawheen base plus extended corridors including Fremantle, Perth Hills, and Perth Airport. Book 24/7 on +61 493 252 766.",
     url: `${SITE_URL}/locations`,
     type: "website",
     siteName: SITE_CONFIG.name,
@@ -33,9 +33,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Wheelchair Taxi Service Areas Perth | 20km Girrawheen",
+    title: "Wheelchair Taxi Service Areas Perth | Girrawheen Base & Metro",
     description:
-      "Perth wheelchair accessible taxi coverage within 20 km of Girrawheen. 24/7 phone & WhatsApp booking.",
+      "Perth wheelchair accessible taxi coverage: primary 20 km base radius plus extended Greater Perth corridors. 24/7 phone & WhatsApp booking.",
     images: [`${SITE_URL}/images/og-image.jpg`],
   },
 };
@@ -88,7 +88,7 @@ export default function LocationsPage() {
             </h1>
             {/* Answer-first 50-word opening paragraph */}
             <p className="text-sm sm:text-base text-zinc-300 leading-relaxed max-w-3xl mx-auto font-normal">
-              Based in Girrawheen WA 6064, Perth Wheelchair Taxi Van delivers 24/7 accessible passenger transport across metropolitan Perth and a 20 km surrounding radius. We service hospitals, residential care, shopping precincts, and Perth Airport Terminals T1–T4 with rear ramp or lift access vans and 10-seater maxi cabs.
+              Based in Girrawheen WA 6064, Perth Wheelchair Taxi Van delivers 24/7 accessible passenger transport centered on our primary 20 km local radius, with scheduled transport extending to major regional destinations including Fremantle, Perth Hills, and Perth Airport Terminals T1–T4 using rear ramp or lift access vans and 10-seater maxi cabs.
             </p>
 
             <div className="mt-6 flex flex-wrap items-center justify-center gap-3">

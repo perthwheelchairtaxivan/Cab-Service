@@ -20,9 +20,9 @@
 - Child Restraints: Rear-facing baby capsules, forward-facing child safety seats, and booster seats available on advance booking request.
 
 ## Subsidies, NDIS & Payment Methods
-- WA Passenger Transport Subsidy Scheme (PTSS, formerly TUSS): Effective 1 October 2025, paper TUSS vouchers can no longer be used in taxis per the WA Department of Transport; participants use a PTSS card. Standard subsidy: 50% of the fare up to $25 cap. Wheelchair subsidy in a wheelchair-accessible taxi: 75% up to $35 cap. [TODO: owner to confirm licence/registration for PTSS card processing terminal].
+- WA Passenger Transport Subsidy Scheme (PTSS, formerly TUSS): Effective 1 October 2025, WA paper TUSS vouchers can no longer be used per the WA Department of Transport; WA participants use a PTSS card (50% subsidy up to $25, or 75% up to $35 for wheelchair taxis). Eligible interstate visitors using reciprocal paper vouchers can still use them in WA taxis. Transactions are processed via approved terminals, the official PTSS driver app, or integrated dispatch systems. [TODO: owner to confirm licence/registration and PTSS onboarding status].
 - National Disability Insurance Scheme (NDIS): Itemized tax invoices containing vehicle registration, pickup, drop-off, date, and ABN provided for self-managed and plan-managed participants under Core Support - Transport (Category 02). [TODO: owner to confirm NDIS provider registration / invoicing setup].
-- Payment Types: EFTPOS, Visa, Mastercard, cash, and electronic PTSS card (subject to terminal confirmation). Upfront fixed quotes available on request.
+- Payment Types: EFTPOS, Visa, Mastercard, cash, and electronic PTSS card (subject to driver onboarding confirmation). Upfront fixed quotes available on request.
 
 ## Core Services & Official URLs
 - Home: https://maxitaxi-five.vercel.app/

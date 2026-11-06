@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { Calculator, ArrowRight, ShieldCheck, Accessibility, Users, Baby } from "lucide-react";
 import WhatsAppIcon from "@/components/icons/WhatsAppIcon";
+import { CONFIG_FLAGS } from "@/config/site";
 
 interface RouteFare {
   from: string;
@@ -159,7 +160,9 @@ export default function FareEstimator() {
       <div className="mt-4 flex items-center justify-between text-[11px] text-slate-400 border-t border-slate-800/60 pt-3">
         <span className="flex items-center gap-1">
           <ShieldCheck className="w-3.5 h-3.5 text-emerald-400" />
-          PTSS smartcard (ex-TUSS) subsidy applies for wheelchair rides
+          {CONFIG_FLAGS.ptssSubsidyAccepted
+            ? "PTSS smartcard (ex-TUSS) subsidy applies for wheelchair rides"
+            : "Upfront fixed quotes or WA DoT meter rates"}
         </span>
         <span>Standard WA DoT Regulated Fares</span>
       </div>

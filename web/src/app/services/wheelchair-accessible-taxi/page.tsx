@@ -152,7 +152,7 @@ export default function WheelchairTaxiPage() {
               WA PTSS &amp; NDIS Billing Options {CONFIG_FLAGS.ptssSubsidyAccepted ? "" : "[TODO: owner to confirm licence/registration]"}
             </h3>
             <p>
-              Effective 1 October 2025, paper TUSS vouchers have been replaced by the WA Department of Transport&apos;s electronic Passenger Transport Subsidy Scheme (PTSS) card. The standard subsidy covers 50% up to $25 per trip, and the wheelchair subsidy covers 75% up to $35 per trip in an authorized wheelchair-accessible taxi. If you are an NDIS participant funded under Core Supports — Transport, we issue formal tax invoices with registered ABN and trip details. {CONFIG_FLAGS.ptssSubsidyAccepted && CONFIG_FLAGS.ndisBillingAccepted ? "" : "[TODO: owner to confirm licence/registration for PTSS card & NDIS billing]."}
+              Effective 1 October 2025, WA-issued paper TUSS vouchers were replaced by the WA Department of Transport&apos;s electronic Passenger Transport Subsidy Scheme (PTSS) card (50% up to $25, or 75% up to $35 for wheelchair taxis). Eligible interstate visitors using reciprocal paper vouchers can still use them in WA taxis. If you are an NDIS participant funded under Core Supports — Transport, we issue formal tax invoices with registered ABN and trip details. {CONFIG_FLAGS.ptssSubsidyAccepted && CONFIG_FLAGS.ndisBillingAccepted ? "" : "[TODO: owner to confirm licence/registration and PTSS/NDIS onboarding status]."}
             </p>
           </div>
 

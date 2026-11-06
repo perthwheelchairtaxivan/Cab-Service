@@ -13,22 +13,22 @@ interface StatItem {
 
 const statsData: StatItem[] = [
   {
-    numericValue: 10,
-    suffix: "+",
-    label: "Years Serving Perth",
-    subtext: "Established local operator",
+    numericValue: 24,
+    suffix: "/7",
+    label: "Always Available",
+    subtext: "Round-the-clock bookings",
   },
   {
-    numericValue: 15000,
-    suffix: "+",
-    label: "Happy Riders Moved",
-    subtext: "Airport & community trips",
+    numericValue: 10,
+    suffix: " Seater",
+    label: "Maxi Van Capacity",
+    subtext: "Rear ramp & group transport",
   },
   {
     numericValue: 100,
     suffix: "%",
-    label: "On-Time Commitment",
-    subtext: "Pre-booked schedule lock",
+    label: "Pre-Booked Priority",
+    subtext: "Advance schedule commitment",
   },
 ];
 

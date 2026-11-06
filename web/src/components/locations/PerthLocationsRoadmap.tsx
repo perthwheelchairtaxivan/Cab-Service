@@ -15,7 +15,7 @@ const TransitRoadmapMapClient = dynamic(
           Loading Transit Roadmap...
         </span>
         <span className="text-zinc-500 text-xs mt-1 font-medium">
-          Connecting 16 hubs within 20 km of Girrawheen
+          Connecting Girrawheen base with regional hubs and airport terminals
         </span>
       </div>
     ),

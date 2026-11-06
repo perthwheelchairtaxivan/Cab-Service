@@ -35,18 +35,18 @@ export default function WhyChooseUsLegacy() {
     },
     {
       icon: Award,
-      title: "Proven Excellence",
-      desc: "15,000+ trips completed with 4.9/5 star passenger rating.",
+      title: "Passenger Commitment",
+      desc: "Accredited wheelchair vans with prompt, respectful driver care.",
       color: "text-violet-400",
       borderColor: "border-violet-400",
     },
   ];
 
   const stats = [
-    { value: "5+", label: "Years" },
-    { value: "15K+", label: "Passengers" },
-    { value: "8,500+", label: "Airport Runs" },
     { value: "24/7", label: "Available" },
+    { value: "10", label: "Passengers" },
+    { value: "100%", label: "Pre-Booked" },
+    { value: "WAT", label: "Wheelchair Vans" },
   ];
 
   return (

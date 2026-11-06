@@ -58,7 +58,7 @@ const fareFAQs = [
   },
   {
     q: "How does the WA Passenger Transport Subsidy Scheme (PTSS, formerly TUSS) work with fares?",
-    a: "From 1 October 2025, paper TUSS vouchers have been replaced by the WA Department of Transport's electronic PTSS smartcard. Eligible residents receive a 50% subsidy (up to $25 per trip) for standard travel or 75% (up to $35 per trip in an authorized wheelchair-accessible taxi). Drivers process your card at destination through an approved terminal, and you only pay the remaining co-payment.",
+    a: "From 1 October 2025, WA-issued paper TUSS vouchers were replaced by the WA Department of Transport's electronic PTSS smartcard. Eligible WA residents receive a 50% subsidy (up to $25 per trip) for standard travel or 75% (up to $35 per trip in an authorized wheelchair-accessible taxi). Subsidies are processed using approved payment terminals, the official PTSS driver app, or integrated dispatch systems, leaving only the remaining co-payment to pay. Note: Under national reciprocal arrangements, eligible interstate visitors using valid paper vouchers from their home state or territory taxi subsidy scheme may still use them in WA taxis.",
   },
   {
     q: "Can I pay for transport using my NDIS plan?",
@@ -185,7 +185,7 @@ export default function FaresPage() {
                 2. WA PTSS Subsidies (Formerly TUSS)
               </h3>
               <p className="text-xs sm:text-sm text-zinc-300 leading-relaxed font-normal">
-                Effective 1 October 2025, WA Department of Transport replaced paper TUSS vouchers with the electronic Passenger Transport Subsidy Scheme (PTSS) card. The standard subsidy covers 50% up to $25 per trip; wheelchair users in a wheelchair-accessible taxi receive 75% up to $35 per trip. {CONFIG_FLAGS.ptssSubsidyAccepted ? "PTSS cards are processed directly at journey's end." : "[TODO: owner to confirm licence/registration for PTSS card processing terminal]."}
+                Effective 1 October 2025, WA Department of Transport replaced WA-issued paper TUSS vouchers with the electronic Passenger Transport Subsidy Scheme (PTSS) card. The standard subsidy covers 50% up to $25 per trip; wheelchair users in an authorized wheelchair-accessible taxi receive 75% up to $35 per trip. Subsidies are processed via approved terminals, the official PTSS driver app, or integrated dispatch systems. Eligible interstate visitors can continue using valid reciprocal Australian paper vouchers. {CONFIG_FLAGS.ptssSubsidyAccepted ? "PTSS processing is available at journey's end." : "[TODO: owner to confirm licence/registration and PTSS onboarding status]."}
               </p>
             </div>
             <div className="mt-4 pt-3 border-t border-zinc-800/80 text-[11px] text-zinc-400 space-y-1">

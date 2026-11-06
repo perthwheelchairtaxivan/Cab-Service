@@ -725,7 +725,7 @@ export default function TransitRoadmapMapClient() {
             ref={mapContainerRef}
             className="locations-roadmap-map-container"
             tabIndex={0}
-            aria-label="Interactive Transit Roadmap showing 16 hubs within 20 km of Girrawheen base"
+            aria-label="Interactive Transit Roadmap showing metropolitan hubs and airport connections from Girrawheen base"
           />
 
           {/* Corner Legend */}

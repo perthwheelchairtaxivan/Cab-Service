@@ -2,6 +2,7 @@
 
 import React, { useRef, useState, useEffect, useCallback } from "react";
 import ServiceCard from "@/components/services/ServiceCard";
+import { CONFIG_FLAGS } from "@/config/site";
 
 const services = [
   {
@@ -14,13 +15,19 @@ const services = [
     badgeText: "24/7 Available",
   },
   {
-    title: "NDIS & Medical Transport",
-    tagline: "NDIS · WA PTSS · Hospital",
+    title: "Medical & Clinic Transport",
+    tagline: CONFIG_FLAGS.ptssSubsidyAccepted && CONFIG_FLAGS.ndisBillingAccepted
+      ? "NDIS · WA PTSS · Hospital"
+      : "Hospitals · Clinics · Therapy",
     iconName: "HeartPulse",
     gradient: "rose" as const,
-    features: ["Hospital Transfers", "WA PTSS Smartcards", "Itemised NDIS Invoices"],
+    features: CONFIG_FLAGS.ptssSubsidyAccepted && CONFIG_FLAGS.ndisBillingAccepted
+      ? ["Hospital Transfers", "WA PTSS Smartcards", "Itemised NDIS Invoices"]
+      : ["Hospital Transfers", "Therapy Appointments", "Tax Receipts Provided"],
     serviceHref: "/services/medical-ndis-transport",
-    badgeText: "NDIS & PTSS",
+    badgeText: CONFIG_FLAGS.ptssSubsidyAccepted && CONFIG_FLAGS.ndisBillingAccepted
+      ? "NDIS & PTSS"
+      : "Medical 24/7",
   },
   {
     title: "Group Maxi Cab",

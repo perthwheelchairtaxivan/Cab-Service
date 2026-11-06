@@ -71,7 +71,7 @@ export default function AboutPage() {
             <SlideUp delay={0.15}>
               <div className="mt-4 sm:mt-8 max-w-xl">
                 <p className="text-xs sm:text-sm md:text-base font-black uppercase tracking-wider text-white leading-relaxed">
-                  OVER <span className="text-amber-400">10 YEARS</span> OF RELIABLE, ACCESSIBLE &amp; DEDICATED
+                  DEDICATED, ACCESSIBLE &amp; RELIABLE
                   <br className="hidden sm:inline" />
                   {" "}PASSENGER CARE ACROSS <span className="text-amber-400">WESTERN AUSTRALIA</span>
                 </p>
@@ -120,7 +120,7 @@ export default function AboutPage() {
                       </div>
                       <div>
                         <p className="font-black text-base text-amber-400 leading-none">
-                          10+ Years
+                          24/7 Care
                         </p>
                         <p className="text-[9px] font-bold uppercase tracking-wider text-zinc-300 mt-0.5">
                           Serving Greater Perth
