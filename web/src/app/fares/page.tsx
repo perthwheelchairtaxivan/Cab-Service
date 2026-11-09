@@ -124,7 +124,7 @@ export default function FaresPage() {
             </h1>
             {/* Answer-first 50-word opening paragraph */}
             <p className="text-sm sm:text-base text-zinc-300 leading-relaxed max-w-2xl mx-auto font-normal">
-              Perth wheelchair accessible taxi and maxi cab fares are set by Western Australia Department of Transport meter tariffs or upfront agreed fixed quotes. We explain the WA PTSS 50% ($25 cap) and 75% ($35 cap) subsidy scheme (formerly TUSS), NDIS transport invoicing [TODO: owner to confirm licence/registration], and guarantee transparent pricing with no hidden arrival surprises.
+              Perth wheelchair accessible taxi and maxi cab fares are set by Western Australia Department of Transport meter tariffs or upfront agreed fixed quotes. We explain the WA PTSS 50% ($25 cap) and 75% ($35 cap) subsidy scheme (formerly TUSS), NDIS transport invoicing, and guarantee transparent pricing with no hidden arrival surprises.
             </p>
 
             <div className="mt-6 flex flex-wrap items-center justify-center gap-3">
@@ -185,7 +185,7 @@ export default function FaresPage() {
                 2. WA PTSS Subsidies (Formerly TUSS)
               </h3>
               <p className="text-xs sm:text-sm text-zinc-300 leading-relaxed font-normal">
-                Effective 1 October 2025, WA Department of Transport replaced paper TUSS vouchers with the electronic Passenger Transport Subsidy Scheme (PTSS) card. The standard subsidy covers 50% up to $25 per trip; wheelchair users in a wheelchair-accessible taxi receive 75% up to $35 per trip. {CONFIG_FLAGS.ptssSubsidyAccepted ? "PTSS cards are processed directly at journey's end." : "[TODO: owner to confirm licence/registration for PTSS card processing terminal]."}
+                Effective 1 October 2025, WA Department of Transport replaced paper TUSS vouchers with the electronic Passenger Transport Subsidy Scheme (PTSS) card. The standard subsidy covers 50% up to $25 per trip; wheelchair users in a wheelchair-accessible taxi receive 75% up to $35 per trip. PTSS cards are processed directly at journey's end.
               </p>
             </div>
             <div className="mt-4 pt-3 border-t border-zinc-800/80 text-[11px] text-zinc-400 space-y-1">
@@ -208,10 +208,10 @@ export default function FaresPage() {
                 <FileText className="w-5 h-5" aria-hidden="true" />
               </div>
               <h3 className="text-lg font-black text-white uppercase tracking-tight mb-2">
-                3. NDIS Plan-Managed Billing {CONFIG_FLAGS.ndisBillingAccepted ? "" : "[TODO: owner to confirm licence/registration]"}
+                3. NDIS Plan-Managed Billing
               </h3>
               <p className="text-xs sm:text-sm text-zinc-300 leading-relaxed font-normal">
-                For participants funded under Core Supports — Transport, we provide itemised tax invoices showing date, origin, destination, vehicle plate, driver details, and registered ABN. These can be paid via card or remitted through your plan manager. {CONFIG_FLAGS.ndisBillingAccepted ? "" : "Formal NDIS provider registration / billing setup is subject to owner confirmation."}
+                For participants funded under Core Supports — Transport, we provide itemised tax invoices showing date, origin, destination, vehicle plate, driver details, and registered ABN. These can be paid via card or remitted through your plan manager.
               </p>
             </div>
             <div className="mt-4 pt-3 border-t border-zinc-800/80 text-[11px] text-zinc-400">

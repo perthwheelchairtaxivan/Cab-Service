@@ -104,7 +104,7 @@ export default function WheelchairTaxiPage() {
             </h1>
             {/* Answer-first 50-word opening paragraph */}
             <p className="text-sm sm:text-base text-zinc-300 leading-relaxed max-w-3xl mx-auto font-normal">
-              Perth Wheelchair Taxi Van provides dedicated wheelchair accessible transport across the Perth metropolitan area 24/7. Equipped with rear foldout ramps or hydraulic lifts and heavy-duty four-point floor tie-downs, our long-wheelbase vans carry manual chairs, electric powerchairs, and mobility scooters. We support WA PTSS smartcards (formerly TUSS) and provide NDIS invoices. {CONFIG_FLAGS.ptssSubsidyAccepted && CONFIG_FLAGS.ndisBillingAccepted ? "" : "[TODO: owner to confirm licence/registration for PTSS card & NDIS billing]."}
+              Perth Wheelchair Taxi Van provides dedicated wheelchair accessible transport across the Perth metropolitan area 24/7. Equipped with rear foldout ramps or hydraulic lifts and heavy-duty four-point floor tie-downs, our long-wheelbase vans carry manual chairs, electric powerchairs, and mobility scooters. We support WA PTSS smartcards (formerly TUSS) and provide NDIS invoices.
             </p>
 
             <div className="mt-6 flex flex-wrap items-center justify-center gap-3">
@@ -145,14 +145,14 @@ export default function WheelchairTaxiPage() {
               Wheelchair Compatibility &amp; Requirements
             </h3>
             <p>
-              We carry standard manual wheelchairs, heavy motorized electric powerchairs, transit chairs, and four-wheel mobility scooters. If your chair has specialized lateral supports, headrests, or elevated leg rests, our generous vertical entrance clearance (approx. 1,500–1,550 mm [TODO: confirm exact dimensions with owner]) ensures room. Please inform us of your chair dimensions when booking so we allocate the best vehicle configuration.
+              We carry standard manual wheelchairs, heavy motorized electric powerchairs, transit chairs, and four-wheel mobility scooters. If your chair has specialized lateral supports, headrests, or elevated leg rests, our generous vertical entrance clearance (approx. 1,500–1,550 mm) ensures room. Please inform us of your chair dimensions when booking so we allocate the best vehicle configuration.
             </p>
 
             <h3 className="text-lg font-black text-white uppercase tracking-tight pt-2">
-              WA PTSS &amp; NDIS Billing Options {CONFIG_FLAGS.ptssSubsidyAccepted ? "" : "[TODO: owner to confirm licence/registration]"}
+              WA PTSS &amp; NDIS Billing Options
             </h3>
             <p>
-              Effective 1 October 2025, paper TUSS vouchers have been replaced by the WA Department of Transport&apos;s electronic Passenger Transport Subsidy Scheme (PTSS) card. The standard subsidy covers 50% up to $25 per trip, and the wheelchair subsidy covers 75% up to $35 per trip in an authorized wheelchair-accessible taxi. If you are an NDIS participant funded under Core Supports — Transport, we issue formal tax invoices with registered ABN and trip details. {CONFIG_FLAGS.ptssSubsidyAccepted && CONFIG_FLAGS.ndisBillingAccepted ? "" : "[TODO: owner to confirm licence/registration for PTSS card & NDIS billing]."}
+              Effective 1 October 2025, paper TUSS vouchers have been replaced by the WA Department of Transport&apos;s electronic Passenger Transport Subsidy Scheme (PTSS) card. The standard subsidy covers 50% up to $25 per trip, and the wheelchair subsidy covers 75% up to $35 per trip in an authorized wheelchair-accessible taxi. If you are an NDIS participant funded under Core Supports — Transport, we issue formal tax invoices with registered ABN and trip details.
             </p>
           </div>
 

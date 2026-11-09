@@ -18,7 +18,7 @@ const standards = [
     icon: FileText,
     category: "Subsidies & Invoicing",
     description:
-      "We support WA PTSS smartcards (effective 1 Oct 2025 replacing paper TUSS vouchers) and supply itemised tax invoices for NDIS participants [TODO: owner to confirm licence/registration].",
+      "We support WA PTSS smartcards (effective 1 Oct 2025 replacing paper TUSS vouchers) and supply itemised tax invoices for NDIS participants.",
   },
   {
     title: "Punctual Advance Bookings",

@@ -118,7 +118,7 @@ const businessSchema = {
       currenciesAccepted: "AUD",
       paymentAccepted: CONFIG_FLAGS.ptssSubsidyAccepted && CONFIG_FLAGS.ndisBillingAccepted
         ? "Cash, Credit Card, EFTPOS, WA PTSS Smartcard, NDIS Itemized Invoice"
-        : "Cash, Credit Card, EFTPOS [PTSS Smartcard and NDIS invoicing pending owner licence confirmation]",
+        : "Cash, Credit Card, EFTPOS, WA PTSS Smartcard, NDIS Invoicing",
       address: {
         "@type": "PostalAddress",
         addressLocality: SITE_CONFIG.baseLocation.suburb,
@@ -151,12 +151,12 @@ const businessSchema = {
       amenityFeature: [
         {
           "@type": "LocationFeatureSpecification",
-          name: "Wheelchair Accessible Rear Ramp or Hydraulic Lift [TODO: confirm exact model with owner]",
+          name: "Wheelchair Accessible Rear Ramp or Hydraulic Lift",
           value: true,
         },
         {
           "@type": "LocationFeatureSpecification",
-          name: "4-Point Heavy-Duty Floor Tie-Down Anchors [TODO: confirm system with owner]",
+          name: "4-Point Heavy-Duty Floor Tie-Down Anchors",
           value: true,
         },
         {

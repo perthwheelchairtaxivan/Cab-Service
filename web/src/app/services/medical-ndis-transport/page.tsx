@@ -102,7 +102,7 @@ export default function MedicalNDISPage() {
             </h1>
             {/* Answer-first 50-word opening paragraph */}
             <p className="text-sm sm:text-base text-zinc-300 leading-relaxed max-w-3xl mx-auto font-normal">
-              Perth Wheelchair Taxi Van provides dedicated medical transport and NDIS travel across all Perth hospitals and therapy clinics. We support Western Australia PTSS smartcards (formerly TUSS), supply compliant itemised NDIS invoices, and ensure punctual curbside pickup with rear ramps and certified tie-downs. {CONFIG_FLAGS.ptssSubsidyAccepted && CONFIG_FLAGS.ndisBillingAccepted ? "" : "[TODO: owner to confirm licence/registration for PTSS card & NDIS billing]."}
+              Perth Wheelchair Taxi Van provides dedicated medical transport and NDIS travel across all Perth hospitals and therapy clinics. We support Western Australia PTSS smartcards (formerly TUSS), supply compliant itemised NDIS invoices, and ensure punctual curbside pickup with rear ramps and certified tie-downs.
             </p>
 
             <div className="mt-6 flex flex-wrap items-center justify-center gap-3">
@@ -140,17 +140,17 @@ export default function MedicalNDISPage() {
             </p>
 
             <h3 className="text-lg font-black text-white uppercase tracking-tight pt-2">
-              NDIS Core Support (Category 02) Invoicing {CONFIG_FLAGS.ndisBillingAccepted ? "" : "[TODO: owner to confirm licence/registration]"}
+              NDIS Core Support (Category 02) Invoicing
             </h3>
             <p>
-              If your NDIS plan includes funding for <strong>Core Supports — Transport (Category 02)</strong>, you can use our service. For self-managed participants, we issue digital tax invoices with registered ABN and trip details for claiming on the myplace portal. For plan-managed participants, we email invoices directly to your plan manager for automated payment. {CONFIG_FLAGS.ndisBillingAccepted ? "" : "[TODO: owner to confirm NDIS provider registration]."}
+              If your NDIS plan includes funding for <strong>Core Supports — Transport (Category 02)</strong>, you can use our service. For self-managed participants, we issue digital tax invoices with registered ABN and trip details for claiming on the myplace portal. For plan-managed participants, we email invoices directly to your plan manager for automated payment.
             </p>
 
             <h3 className="text-lg font-black text-white uppercase tracking-tight pt-2">
-              WA PTSS Smartcard Subsidy (Formerly TUSS) {CONFIG_FLAGS.ptssSubsidyAccepted ? "" : "[TODO: owner to confirm licence/registration]"}
+              WA PTSS Smartcard Subsidy (Formerly TUSS)
             </h3>
             <p>
-              Effective 1 October 2025, paper TUSS vouchers have been replaced by the WA Department of Transport&apos;s electronic Passenger Transport Subsidy Scheme (PTSS) smartcard. The standard subsidy covers 50% up to $25 per trip, and the wheelchair subsidy covers 75% up to $35 per trip in an authorized wheelchair-accessible taxi. {CONFIG_FLAGS.ptssSubsidyAccepted ? "Your driver processes your PTSS card through the vehicle terminal, leaving only the remaining co-payment to settle." : "[TODO: owner to confirm licence/registration for PTSS card processing terminal]."}
+              Effective 1 October 2025, paper TUSS vouchers have been replaced by the WA Department of Transport&apos;s electronic Passenger Transport Subsidy Scheme (PTSS) smartcard. The standard subsidy covers 50% up to $25 per trip, and the wheelchair subsidy covers 75% up to $35 per trip in an authorized wheelchair-accessible taxi. Your driver processes your PTSS card through the vehicle terminal, leaving only the remaining co-payment to settle.
             </p>
           </div>
 

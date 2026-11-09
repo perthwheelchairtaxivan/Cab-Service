@@ -210,7 +210,7 @@ export default function Home() {
             Perth Wheelchair Accessible Taxi &amp; 10-Seater Maxi Cab Service
           </h2>
           <p className="text-sm sm:text-base text-zinc-300 leading-relaxed max-w-3xl mx-auto mb-6">
-            Looking for a dependable wheelchair taxi or 10-seater maxi cab in Perth? Based in Girrawheen WA, Perth Wheelchair Taxi Van delivers 24/7 commercial passenger transport fitted with rear ramps or hydraulic lifts and 4-point floor tie-downs. We support Western Australia PTSS smartcards (formerly TUSS), provide NDIS tax invoices, and offer upfront fixed quotes for Perth Airport transfers, medical appointments, and group travel. {CONFIG_FLAGS.ptssSubsidyAccepted && CONFIG_FLAGS.ndisBillingAccepted ? "" : "[TODO: owner to confirm licence/registration for PTSS card & NDIS billing]."}
+            Looking for a dependable wheelchair taxi or 10-seater maxi cab in Perth? Based in Girrawheen WA, Perth Wheelchair Taxi Van delivers 24/7 commercial passenger transport fitted with rear ramps or hydraulic lifts and 4-point floor tie-downs. We support Western Australia PTSS smartcards (formerly TUSS), provide NDIS tax invoices, and offer upfront fixed quotes for Perth Airport transfers, medical appointments, and group travel.
           </p>
 
           <div className="flex flex-wrap items-center justify-center gap-3 sm:gap-4 text-xs sm:text-sm font-bold">

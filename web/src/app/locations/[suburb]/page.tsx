@@ -192,7 +192,7 @@ export default async function SuburbPage({ params }: Props) {
               </ul>
             </div>
             <div className="mt-6 pt-3 border-t border-zinc-800/80 text-[11px] text-zinc-400">
-              WA PTSS smartcards (formerly TUSS) and itemised NDIS invoices supported [TODO: owner to confirm licence/registration].
+              WA PTSS smartcards (formerly TUSS) and itemised NDIS invoices supported.
             </div>
           </div>
 

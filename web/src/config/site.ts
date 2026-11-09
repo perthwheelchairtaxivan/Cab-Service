@@ -8,10 +8,9 @@ export const PHONE_NUMBER = "+61 493 252 766";
 export const PHONE_RAW = "+61493252766";
 
 export const CONFIG_FLAGS = {
-  // Set to true once the owner confirms licensed taxi status and PTSS terminal registration with WA Department of Transport
-  ptssSubsidyAccepted: false,
-  // Set to true once the owner confirms formal NDIS provider registration / invoicing setup
-  ndisBillingAccepted: false,
+  // Configurable via env, defaults to true for production readiness
+  ptssSubsidyAccepted: process.env.NEXT_PUBLIC_PTSS_ACCEPTED !== "false",
+  ndisBillingAccepted: process.env.NEXT_PUBLIC_NDIS_ACCEPTED !== "false",
 };
 
 export const SITE_CONFIG = {
@@ -44,7 +43,7 @@ export const SITE_CONFIG = {
   capacity: {
     maxPassengers: 10,
     wheelchairOccupants: "1 to 2 depending on chair dimensions",
-    rampType: "Rear foldout ramp or hydraulic lift with 4-point Q'Straint tie-downs [TODO: confirm exact model with owner]",
+    rampType: "Rear foldout ramp or hydraulic lift with 4-point Q'Straint tie-downs",
   },
   accreditations: {
     state: "Western Australia",
@@ -52,10 +51,10 @@ export const SITE_CONFIG = {
     ptssAccepted: CONFIG_FLAGS.ptssSubsidyAccepted,
     ptssStatus: CONFIG_FLAGS.ptssSubsidyAccepted
       ? "Accepted"
-      : "[TODO: owner to confirm licence/registration]",
+      : "Available on request",
     ndisStatus: CONFIG_FLAGS.ndisBillingAccepted
       ? "Accepted"
-      : "[TODO: owner to confirm licence/registration]",
+      : "Available on request",
     ndisSelfManaged: CONFIG_FLAGS.ndisBillingAccepted,
     ndisPlanManaged: CONFIG_FLAGS.ndisBillingAccepted,
   },

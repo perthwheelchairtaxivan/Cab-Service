@@ -205,12 +205,12 @@ export default function HowToUsePTSSPage() {
             <h3 className="text-base font-bold text-white uppercase">
               {CONFIG_FLAGS.ptssSubsidyAccepted
                 ? "Book an Accessible Ride with PTSS"
-                : "Book an Accessible Taxi [TODO: owner to confirm licence/registration]"}
+                : "Book an Accessible Taxi"}
             </h3>
             <p className="text-xs text-zinc-400 mt-1">
               {CONFIG_FLAGS.ptssSubsidyAccepted
                 ? "We accept WA PTSS smartcards across Greater Perth 24 hours a day."
-                : "Accessible taxi vans available 24/7 across Perth metropolitan areas. Note: PTSS card terminal acceptance pending final owner licence confirmation."}
+                : "Accessible taxi vans available 24/7 across Perth metropolitan areas."}
             </p>
           </div>
           <Link

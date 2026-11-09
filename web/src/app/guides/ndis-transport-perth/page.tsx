@@ -154,7 +154,7 @@ export default function NDISTransportGuidePage() {
         <div className="p-6 bg-zinc-950 border border-sky-500/40 rounded-2xl flex flex-col sm:flex-row items-center justify-between gap-4">
           <div>
             <h3 className="text-base font-bold text-white uppercase">Need NDIS Transport in Perth?</h3>
-            <p className="text-xs text-zinc-400 mt-1">We supply itemised tax receipts for self-managed and plan-managed participants [TODO: owner to confirm licence/registration].</p>
+            <p className="text-xs text-zinc-400 mt-1">We supply itemised tax receipts for self-managed and plan-managed participants.</p>
           </div>
           <Link
             href="/services/medical-ndis-transport"

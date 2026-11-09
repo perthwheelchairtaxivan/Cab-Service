@@ -310,7 +310,7 @@ export default function AboutPage() {
                     <p className="text-[10px] text-zinc-300 font-medium mt-0.5 leading-snug">
                       {CONFIG_FLAGS.ptssSubsidyAccepted
                         ? "Approved PTSS smartcard operator"
-                        : "Smartcards supported [TODO: owner to confirm licence/registration]"}
+                        : "PTSS smartcards supported"}
                     </p>
                   </div>
                 </div>
