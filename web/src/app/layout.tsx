@@ -78,7 +78,7 @@ export const metadata: Metadata = {
       "Perth wheelchair accessible taxi vans and 10-seater maxi cabs with rear ramp or lift access. WA TUSS vouchers & NDIS accepted. Call or WhatsApp +61 493 252 766.",
     images: [
       {
-        url: `${SITE_URL}/images/og-image.jpg`,
+        url: `${SITE_URL}/images/perth-wheelchair-taxi-hero.jpg`,
         width: 1200,
         height: 630,
         alt: "Perth Wheelchair Taxi Van and Maxi Cab Service",
@@ -91,7 +91,7 @@ export const metadata: Metadata = {
     title: "Wheelchair Taxi & Maxi Taxi Perth | Accessible Vans 24/7",
     description:
       "Perth wheelchair accessible taxi vans and 10-seater maxi cabs with rear ramp or lift access. WA TUSS vouchers & NDIS accepted. Call or WhatsApp +61 493 252 766.",
-    images: [`${SITE_URL}/images/og-image.jpg`],
+    images: [`${SITE_URL}/images/perth-wheelchair-taxi-hero.jpg`],
   },
   verification: {
     google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION || undefined,

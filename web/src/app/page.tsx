@@ -110,7 +110,7 @@ export default function Home() {
         {/* Background Image with optimized mobile sizes & webp/avif */}
         <div className="absolute inset-0 z-0">
           <Image
-            src="/images/hero-white-van.jpg"
+            src="/images/perth-wheelchair-taxi-hero.jpg"
             alt="Wheelchair accessible maxi taxi van with rear hydraulic lift in Perth WA"
             fill
             priority
