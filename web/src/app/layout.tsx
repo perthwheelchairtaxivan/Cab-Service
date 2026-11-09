@@ -38,10 +38,10 @@ export const metadata: Metadata = {
       "Wheelchair accessible taxi vans in Perth with ramp or lift access, for up to 10 passengers. NDIS & TUSS accepted. Call or WhatsApp +61 493 252 766.",
     images: [
       {
-        url: "/images/hero-white-van.jpg",
+        url: "/images/perth-wheelchair-taxi-hero.jpg",
         width: 1200,
         height: 630,
-        alt: "White wheelchair-accessible maxi cab in front of the Perth skyline at sunset",
+        alt: "White wheelchair-accessible taxi van with deployed lift ramp in front of Perth skyline at sunset",
       },
     ],
   },
@@ -50,7 +50,7 @@ export const metadata: Metadata = {
     title: "Wheelchair Taxi Perth | Accessible Taxi Vans 24/7",
     description:
       "Wheelchair accessible taxi vans in Perth with ramp or lift access, for up to 10 passengers. NDIS & TUSS accepted. Call or WhatsApp +61 493 252 766.",
-    images: ["/images/hero-white-van.jpg"],
+    images: ["/images/perth-wheelchair-taxi-hero.jpg"],
   },
 };
 
@@ -64,7 +64,7 @@ const taxiServiceSchema = {
   url: SITE_URL,
   telephone: "+61493252766",
   email: "bookings@wheelchairmaxiperth.com",
-  image: `${SITE_URL}/images/hero-white-van.jpg`,
+  image: `${SITE_URL}/images/perth-wheelchair-taxi-hero.jpg`,
   priceRange: "$$",
   address: {
     "@type": "PostalAddress",

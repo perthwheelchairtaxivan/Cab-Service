@@ -74,8 +74,8 @@ export default function Home() {
         {/* Background Image & Crisp Overlays */}
         <div className="absolute inset-0 z-0">
           <Image
-            src="/images/hero-white-van.jpg"
-            alt="White wheelchair-accessible maxi cab in front of the Perth skyline at sunset"
+            src="/images/perth-wheelchair-taxi-hero.jpg"
+            alt="White wheelchair-accessible taxi van with deployed lift ramp in front of Perth skyline at sunset"
             fill
             priority
             sizes="100vw"
