@@ -50,7 +50,7 @@ const SERVICE_DESCRIPTIONS: Record<string, string> = {
   "Wheelchair Taxi":
     "Wheelchair accessible taxi vans with a rear ramp or lift, based in Girrawheen and covering Perth metro 24/7. Passengers travel securely seated in their wheelchair with restraints and driver assistance.",
   "NDIS & Medical Transport":
-    "Reliable medical and NDIS transport across Perth metro for clinic visits and therapy. WA TUSS vouchers accepted and itemised invoices for NDIS participants provided on request.",
+    "Reliable medical and NDIS transport across Perth metro for clinic visits and therapy. WA PTSS smartcards (formerly TUSS) and itemised NDIS invoices supported on request [TODO: owner to confirm licence/registration].",
   "Group Maxi Cab":
     "Maxi taxi vans carrying up to 10 passengers across Perth metro. Rear ramp or lift van with space for carers, family, and group outings.",
   "Baby Seat Taxi":

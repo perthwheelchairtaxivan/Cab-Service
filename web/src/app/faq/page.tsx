@@ -10,11 +10,11 @@ import FAQAccordion from "@/components/services/FAQAccordion";
 import { SITE_URL, BUSINESS_EMAIL, PHONE_NUMBER } from "@/config/site";
 
 export const metadata: Metadata = {
-  title: "Wheelchair Taxi Perth FAQs | Equipment, TUSS & Booking",
+  title: "Wheelchair Taxi Perth FAQs | Equipment, PTSS & Booking",
   description:
-    "Find clear answers on Perth wheelchair taxi ramps, Q'Straint tie-downs, 10-seater maxi cabs, TUSS vouchers, NDIS invoicing, and airport booking procedures.",
+    "Find clear answers on Perth wheelchair taxi ramps, wheelchair restraints, 10-seater maxi cabs, PTSS smartcards (formerly TUSS), NDIS invoicing, and airport booking procedures.",
   alternates: {
-    canonical: "/faq",
+    canonical: `${SITE_URL}/faq`,
   },
 };
 
@@ -66,7 +66,7 @@ export default function FAQPage() {
               Wheelchair &amp; Maxi Taxi Perth FAQs
             </h1>
             <p className="text-lg lg:text-xl text-slate-300 leading-relaxed">
-              Answers to essential questions about Perth wheelchair taxis, vehicle specifications, and booking policies. Learn how our rear ramps accommodate power wheelchairs, how WA TUSS vouchers and NDIS invoicing work, and how to reserve a 10-seater maxi cab 24 hours a day.
+              Answers to essential questions about Perth wheelchair taxis, vehicle specifications, and booking policies. Learn how our rear ramps accommodate wheelchairs, how WA PTSS smartcards (formerly TUSS) work, and how to reserve a 10-seater maxi cab 24 hours a day.
             </p>
           </SlideUp>
         </div>

@@ -20,7 +20,7 @@ To dominate local search ("near me", "Perth", map pack rankings), the business N
 | **Email Address** | `perthwheelchairtaxivan@gmail.com` |
 | **ABN / Accreditation** | Department of Transport WA Accredited Passenger Transport Driver & Vehicle |
 | **Hours of Operation** | Monday to Sunday: 24 Hours (Open 24/7) |
-| **Short Description** | Perth wheelchair-accessible taxi van and 10-seater maxi cab service. Certified rear ramp, 4-point Q'Straint restraints, WA TUSS vouchers and NDIS billing accepted. 24/7 airport and medical transport. |
+| **Short Description** | Perth wheelchair-accessible taxi van and 10-seater maxi cab service. Rear ramp or lift, 4-point restraints, WA PTSS (formerly TUSS) and NDIS transport options. 24/7 airport and medical transport. [TODO: owner to confirm licence/registration]. |
 
 ---
 

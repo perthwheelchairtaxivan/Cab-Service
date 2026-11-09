@@ -40,7 +40,7 @@ export default function Footer() {
             <div className="flex items-center justify-center gap-2 text-zinc-300">
               <ShieldCheck className="w-4 h-4 text-emerald-400 shrink-0" aria-hidden="true" />
               <span className="text-[11px] sm:text-xs font-bold uppercase tracking-wider">
-                NDIS &amp; WA TUSS
+                NDIS &amp; WA PTSS
               </span>
             </div>
             <div className="flex items-center justify-center gap-2 text-zinc-300">
@@ -231,7 +231,7 @@ export default function Footer() {
             </Link>
             <span className="text-zinc-700" aria-hidden="true">|</span>
             <Link href="/fares" className="hover:text-amber-400 transition-colors">
-              Fares &amp; TUSS
+              Fares &amp; PTSS (ex-TUSS)
             </Link>
           </div>
 

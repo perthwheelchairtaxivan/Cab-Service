@@ -13,13 +13,14 @@ import FleetGallery from "@/components/about/FleetGallery";
 
 import Image from "next/image";
 import Link from "next/link";
+import { SITE_URL, CONFIG_FLAGS } from "@/config/site";
 
 export const metadata: Metadata = {
   title: "About Us",
   description:
-    "Learn about Perth Wheelchair Taxi Van. Over 10 years of trusted wheelchair accessible transport, NDIS accreditation, professional drivers, and maxi cabs.",
+    "Learn about Perth Wheelchair Taxi Van. Dedicated wheelchair accessible transport, WA accredited drivers, and 10-seater maxi cabs based in Girrawheen, Perth WA.",
   alternates: {
-    canonical: "/about",
+    canonical: `${SITE_URL}/about`,
   },
 };
 
@@ -304,10 +305,12 @@ export default function AboutPage() {
                   </div>
                   <div>
                     <h3 className="text-xs font-black uppercase tracking-wide text-amber-400">
-                      TUSS Vouchers
+                      WA PTSS (ex-TUSS)
                     </h3>
                     <p className="text-[10px] text-zinc-300 font-medium mt-0.5 leading-snug">
-                      Approved Taxi User Subsidy Scheme operator
+                      {CONFIG_FLAGS.ptssSubsidyAccepted
+                        ? "Approved PTSS smartcard operator"
+                        : "Smartcards supported [TODO: owner to confirm licence/registration]"}
                     </p>
                   </div>
                 </div>

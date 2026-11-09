@@ -24,7 +24,7 @@
 ## 2. Business Description (Exact 742 / 750 Characters)
 
 ```text
-Perth Wheelchair Taxi Van provides dedicated wheelchair-accessible transport and 10-seater maxi taxi services across Greater Perth, operating 24 hours a day, 7 days a week. Based in Girrawheen, we specialize in safe, respectful transport for manual wheelchairs, powerchairs, and mobility scooters with certified rear ramps, 1,550 mm door clearance, and 4-point Q'Straint tie-down restraint systems. We welcome WA Taxi User Subsidy Scheme (TUSS) 50% and 75% co-payment vouchers and provide itemized tax invoices for NDIS self-managed and plan-managed participants (Core Support Category 02). From Perth Airport (T1–T4) transfers with flight tracking to hospital appointments and Swan Valley group charters, book direct with accredited drivers. Call or WhatsApp +61 493 252 766.
+Perth Wheelchair Taxi Van provides dedicated wheelchair-accessible transport and 10-seater maxi taxi services across Greater Perth, operating 24 hours a day, 7 days a week. Based in Girrawheen, we specialize in safe, respectful transport for manual wheelchairs, powerchairs, and mobility scooters with rear ramps or lifts and 4-point tie-down restraint systems. We support WA Passenger Transport Subsidy Scheme (PTSS, formerly TUSS) smartcards (50% up to $25, 75% up to $35) and supply itemized tax invoices for NDIS participants (Core Support Category 02). From Perth Airport (T1–T4) transfers to hospital appointments and Swan Valley group charters, book direct with drivers. Call or WhatsApp +61 493 252 766. [TODO: owner to confirm licence/registration].
 ```
 
 ---
@@ -68,7 +68,7 @@ Under "Business Attributes" in Google Business Profile manager, enable:
   * Debit cards: **Yes**
   * Credit cards (Visa, MasterCard, Amex): **Yes**
   * Contactless payments (EFTPOS / Apple Pay / Google Pay): **Yes**
-  * WA TUSS Vouchers accepted: **Yes** (Note in description/posts)
+  * WA PTSS Smartcard (formerly TUSS): **Pending terminal confirmation** (Note in description/posts: [TODO: owner to confirm licence/registration])
 
 ---
 
@@ -95,9 +95,9 @@ Publish 1 Google Update post every Tuesday morning:
   * *Headline:* "Safe & Certified Wheelchair Travel Across Perth"
   * *Body:* "Every wheelchair journey with Perth Wheelchair Taxi Van is secured using heavy-duty 4-point Q'Straint tie-downs and lap-sash occupant seatbelts. Our low-gradient rear ramp accommodates manual and electric powerchairs with up to 1,550 mm headroom. Book your medical or community transfer today."
   * *CTA Button:* "Call Now" (`+61493252766`)
-* **Week 2 (TUSS & NDIS Billing):**
-  * *Headline:* "WA TUSS Vouchers & NDIS Transport Invoicing"
-  * *Body:* "Did you know we accept physical paper WA Taxi User Subsidy Scheme (TUSS) vouchers for 50% and 75% co-payments? We also provide compliant, line-item tax invoices for NDIS self-managed and plan-managed participants under Core Support Category 02. No card surcharges on metered TUSS fares."
+* **Week 2 (PTSS & NDIS Transport):**
+  * *Headline:* "WA PTSS Smartcards & NDIS Transport Invoicing"
+  * *Body:* "Effective 1 October 2025, paper TUSS vouchers have been replaced with WA PTSS smartcards (50% subsidy up to $25, or 75% up to $35 for wheelchair taxis). We also provide compliant, line-item tax invoices for NDIS self-managed and plan-managed participants under Core Support Category 02 [TODO: owner to confirm licence/registration]."
   * *CTA Button:* "Book Online" (`https://maxitaxi-five.vercel.app/fares`)
 * **Week 3 (Perth Airport T1–T4 Transfers):**
   * *Headline:* "24/7 Perth Airport Maxi Cab — Zero Luggage Compromises"

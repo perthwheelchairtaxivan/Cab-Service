@@ -11,23 +11,24 @@ import {
   Phone,
   Plane,
   HeartPulse,
+  ExternalLink,
 } from "lucide-react";
 import SlideUp from "@/components/animations/SlideUp";
 import WhatsAppIcon from "@/components/icons/WhatsAppIcon";
 import JsonLd from "@/components/seo/JsonLd";
-import { SITE_URL, SITE_CONFIG } from "@/config/site";
+import { SITE_URL, SITE_CONFIG, CONFIG_FLAGS } from "@/config/site";
 
 export const metadata: Metadata = {
   title: "Maxi Taxi Perth Prices & Rates | Upfront Fixed Quotes",
   description:
-    "Understand Perth wheelchair taxi and maxi cab pricing. Learn about WA TUSS voucher subsidies (50% & 75%), NDIS invoicing, airport tolls, and fixed upfront quotes.",
+    "Understand Perth wheelchair taxi and maxi cab pricing. Learn about WA PTSS smartcard subsidies (50% up to $25 & 75% up to $35, formerly TUSS), NDIS invoicing, airport tolls, and fixed upfront quotes.",
   alternates: {
     canonical: `${SITE_URL}/fares`,
   },
   openGraph: {
     title: "Maxi Taxi Perth Prices & Rates | Upfront Fixed Quotes",
     description:
-      "Clear explanation of Perth wheelchair taxi fares, WA TUSS vouchers, NDIS transport invoices, and upfront fixed pricing. Call +61 493 252 766.",
+      "Clear explanation of Perth wheelchair taxi fares, WA PTSS subsidies (formerly TUSS), NDIS transport invoices, and upfront fixed pricing. Call +61 493 252 766.",
     url: `${SITE_URL}/fares`,
     type: "website",
     siteName: SITE_CONFIG.name,
@@ -45,7 +46,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Maxi Taxi Perth Prices & Rates | Upfront Fixed Quotes",
     description:
-      "Perth wheelchair taxi fares explained: WA TUSS subsidies, NDIS invoicing, and fixed upfront quotes.",
+      "Perth wheelchair taxi fares explained: WA PTSS subsidies (formerly TUSS), NDIS invoicing, and fixed upfront quotes.",
     images: [`${SITE_URL}/images/og-image.jpg`],
   },
 };
@@ -56,8 +57,8 @@ const fareFAQs = [
     a: "In Western Australia, taxi fares are regulated by the Department of Transport (DoT) based on distance, time, and standard tariff bands (Tariff 1 for standard daytime, Tariff 2 for peak/night/weekends, and Tariff 3 for high holidays). For wheelchair bookings, passengers may travel on meter or request a guaranteed upfront fixed quote so the fare is locked in before travel.",
   },
   {
-    q: "How does the WA Taxi User Subsidy Scheme (TUSS) work with fares?",
-    a: "Eligible Western Australian residents with permanent disabilities receive TUSS voucher books from the Department of Transport providing either a 50% or 75% subsidy off metered taxi fares, up to state government co-payment limits. We accept both official paper vouchers and electronic TUSS processing. You only pay your remaining passenger co-payment at the end of the trip.",
+    q: "How does the WA Passenger Transport Subsidy Scheme (PTSS, formerly TUSS) work with fares?",
+    a: "From 1 October 2025, paper TUSS vouchers have been replaced by the WA Department of Transport's electronic PTSS smartcard. Eligible residents receive a 50% subsidy (up to $25 per trip) for standard travel or 75% (up to $35 per trip in an authorized wheelchair-accessible taxi). Drivers process your card at destination through an approved terminal, and you only pay the remaining co-payment.",
   },
   {
     q: "Can I pay for transport using my NDIS plan?",
@@ -123,7 +124,7 @@ export default function FaresPage() {
             </h1>
             {/* Answer-first 50-word opening paragraph */}
             <p className="text-sm sm:text-base text-zinc-300 leading-relaxed max-w-2xl mx-auto font-normal">
-              Perth wheelchair accessible taxi and maxi cab fares are set by Western Australia Department of Transport meter tariffs or upfront agreed fixed quotes. We accept WA TUSS 50% and 75% subsidy vouchers, issue NDIS-compliant tax invoices, and guarantee transparent pricing with no hidden arrival or callout surprises.
+              Perth wheelchair accessible taxi and maxi cab fares are set by Western Australia Department of Transport meter tariffs or upfront agreed fixed quotes. We explain the WA PTSS 50% ($25 cap) and 75% ($35 cap) subsidy scheme (formerly TUSS), NDIS transport invoicing [TODO: owner to confirm licence/registration], and guarantee transparent pricing with no hidden arrival surprises.
             </p>
 
             <div className="mt-6 flex flex-wrap items-center justify-center gap-3">
@@ -181,14 +182,23 @@ export default function FaresPage() {
                 <ShieldCheck className="w-5 h-5" aria-hidden="true" />
               </div>
               <h3 className="text-lg font-black text-white uppercase tracking-tight mb-2">
-                2. WA TUSS 50% &amp; 75% Subsidies
+                2. WA PTSS Subsidies (Formerly TUSS)
               </h3>
               <p className="text-xs sm:text-sm text-zinc-300 leading-relaxed font-normal">
-                If you carry a Taxi User Subsidy Scheme voucher card or booklet issued by the WA State Government, your voucher covers either 50% or 75% of your metered trip up to the state maximum subsidy threshold. We accept TUSS directly at payment time.
+                Effective 1 October 2025, WA Department of Transport replaced paper TUSS vouchers with the electronic Passenger Transport Subsidy Scheme (PTSS) card. The standard subsidy covers 50% up to $25 per trip; wheelchair users in a wheelchair-accessible taxi receive 75% up to $35 per trip. {CONFIG_FLAGS.ptssSubsidyAccepted ? "PTSS cards are processed directly at journey's end." : "[TODO: owner to confirm licence/registration for PTSS card processing terminal]."}
               </p>
             </div>
-            <div className="mt-4 pt-3 border-t border-zinc-800/80 text-[11px] text-zinc-400">
-              Bring your signed TUSS voucher booklet for the driver to sign.
+            <div className="mt-4 pt-3 border-t border-zinc-800/80 text-[11px] text-zinc-400 space-y-1">
+              <div>Last verified: October 2025 (WA DoT)</div>
+              <a
+                href="https://www.transport.wa.gov.au/taxis-on-demand-transport/passenger-transport-subsidy-scheme-ptss.asp"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1 text-emerald-400 hover:text-emerald-300 font-bold underline"
+              >
+                <span>Official DoT PTSS rules</span>
+                <ExternalLink className="w-3 h-3" aria-hidden="true" />
+              </a>
             </div>
           </div>
 
@@ -198,10 +208,10 @@ export default function FaresPage() {
                 <FileText className="w-5 h-5" aria-hidden="true" />
               </div>
               <h3 className="text-lg font-black text-white uppercase tracking-tight mb-2">
-                3. NDIS Plan-Managed Billing
+                3. NDIS Plan-Managed Billing {CONFIG_FLAGS.ndisBillingAccepted ? "" : "[TODO: owner to confirm licence/registration]"}
               </h3>
               <p className="text-xs sm:text-sm text-zinc-300 leading-relaxed font-normal">
-                For participants funded under Core Supports — Transport, we provide itemised tax invoices showing date, origin, destination, vehicle plate, driver details, and registered ABN. These can be paid via card or remitted through your plan manager.
+                For participants funded under Core Supports — Transport, we provide itemised tax invoices showing date, origin, destination, vehicle plate, driver details, and registered ABN. These can be paid via card or remitted through your plan manager. {CONFIG_FLAGS.ndisBillingAccepted ? "" : "Formal NDIS provider registration / billing setup is subject to owner confirmation."}
               </p>
             </div>
             <div className="mt-4 pt-3 border-t border-zinc-800/80 text-[11px] text-zinc-400">

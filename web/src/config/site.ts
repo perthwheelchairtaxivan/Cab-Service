@@ -7,13 +7,20 @@ export const BUSINESS_EMAIL =
 export const PHONE_NUMBER = "+61 493 252 766";
 export const PHONE_RAW = "+61493252766";
 
+export const CONFIG_FLAGS = {
+  // Set to true once the owner confirms licensed taxi status and PTSS terminal registration with WA Department of Transport
+  ptssSubsidyAccepted: false,
+  // Set to true once the owner confirms formal NDIS provider registration / invoicing setup
+  ndisBillingAccepted: false,
+};
+
 export const SITE_CONFIG = {
   name: "Perth Wheelchair Taxi Van",
   legalName: "Perth Wheelchair Taxi Van",
   shortName: "Perth Wheelchair Taxi",
   tagline: "Dedicated Wheelchair Accessible Maxi Taxis in Perth & Girrawheen",
   description:
-    "Wheelchair accessible taxi vans and 10-seater maxi cabs in Perth, WA. Rear ramp or hydraulic lift, NDIS & WA TUSS vouchers accepted. Available 24/7.",
+    "Wheelchair accessible taxi vans and 10-seater maxi cabs in Perth, WA. Rear ramp or hydraulic lift, PTSS smartcard (formerly TUSS) & NDIS transport options. Available 24/7.",
   phone: "+61 493 252 766",
   phoneRaw: "+61493252766",
   phoneTel: "tel:+61493252766",
@@ -37,14 +44,20 @@ export const SITE_CONFIG = {
   capacity: {
     maxPassengers: 10,
     wheelchairOccupants: "1 to 2 depending on chair dimensions",
-    rampType: "Rear foldout ramp or hydraulic lift with 4-point Q'Straint tie-downs",
+    rampType: "Rear foldout ramp or hydraulic lift with 4-point Q'Straint tie-downs [TODO: confirm exact model with owner]",
   },
   accreditations: {
     state: "Western Australia",
     regulator: "WA Department of Transport (DoT)",
-    tussAccepted: true,
-    ndisSelfManaged: true,
-    ndisPlanManaged: true,
+    ptssAccepted: CONFIG_FLAGS.ptssSubsidyAccepted,
+    ptssStatus: CONFIG_FLAGS.ptssSubsidyAccepted
+      ? "Accepted"
+      : "[TODO: owner to confirm licence/registration]",
+    ndisStatus: CONFIG_FLAGS.ndisBillingAccepted
+      ? "Accepted"
+      : "[TODO: owner to confirm licence/registration]",
+    ndisSelfManaged: CONFIG_FLAGS.ndisBillingAccepted,
+    ndisPlanManaged: CONFIG_FLAGS.ndisBillingAccepted,
   },
   operatingHours: "24/7 (Mon-Sun 00:00 - 23:59)",
 };

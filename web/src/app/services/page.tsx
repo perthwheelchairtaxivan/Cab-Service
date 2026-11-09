@@ -19,19 +19,19 @@ import ServiceCard from "@/components/services/ServiceCard";
 import HowItWorks from "@/components/services/HowItWorks";
 import TestimonialsCarousel from "@/components/home/TestimonialsCarousel";
 import JsonLd from "@/components/seo/JsonLd";
-import { SITE_URL, SITE_CONFIG } from "@/config/site";
+import { SITE_URL, SITE_CONFIG, CONFIG_FLAGS } from "@/config/site";
 
 export const metadata: Metadata = {
   title: "Perth Wheelchair Taxi & Maxi Cab Services | 24/7",
   description:
-    "Perth wheelchair accessible taxi vans and 10-seater maxi cabs. Rear ramp or lift, NDIS & WA TUSS accepted, 24/7 airport and medical transfers.",
+    "Perth wheelchair accessible taxi vans and 10-seater maxi cabs. Rear ramp or lift, PTSS smartcards (formerly TUSS) & NDIS transport options, 24/7 airport and medical transfers.",
   alternates: {
     canonical: `${SITE_URL}/services`,
   },
   openGraph: {
     title: "Perth Wheelchair Taxi & Maxi Cab Services | 24/7",
     description:
-      "Perth wheelchair accessible taxi vans and 10-seater maxi cabs. Rear ramp or lift, NDIS & WA TUSS accepted, 24/7 airport and medical transfers.",
+      "Perth wheelchair accessible taxi vans and 10-seater maxi cabs. Rear ramp or lift, PTSS smartcards (formerly TUSS) & NDIS transport options, 24/7 airport and medical transfers.",
     url: `${SITE_URL}/services`,
     type: "website",
     siteName: SITE_CONFIG.name,
@@ -49,7 +49,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Perth Wheelchair Taxi & Maxi Cab Services | 24/7",
     description:
-      "Perth wheelchair accessible taxi vans and 10-seater maxi cabs. Rear ramp or lift, NDIS & WA TUSS accepted 24/7.",
+      "Perth wheelchair accessible taxi vans and 10-seater maxi cabs. Rear ramp or lift, PTSS & NDIS transport options 24/7.",
     images: [`${SITE_URL}/images/og-image.jpg`],
   },
 };
@@ -66,10 +66,10 @@ const servicesList = [
   },
   {
     title: "NDIS & Medical Transport",
-    tagline: "NDIS · WA TUSS · Hospitals",
+    tagline: "NDIS · WA PTSS · Hospitals",
     iconName: "HeartPulse" as const,
     gradient: "rose" as const,
-    features: ["Hospital Transfers", "WA TUSS Vouchers", "Itemised NDIS Invoices"],
+    features: ["Hospital Transfers", "WA PTSS Smartcards", "Itemised NDIS Invoices"],
     serviceHref: "/services/medical-ndis-transport",
     badgeText: "NDIS",
   },
@@ -114,7 +114,7 @@ const servicesList = [
 const stats = [
   { value: "24/7", label: "Open 24/7", icon: Clock },
   { value: "10", label: "Max Passengers", icon: Users },
-  { value: "TUSS", label: "Vouchers Accepted", icon: Star },
+  { value: "PTSS", label: "Smartcard (ex-TUSS)", icon: Star },
   { value: "NDIS", label: "Invoices Provided", icon: ShieldCheck },
 ];
 

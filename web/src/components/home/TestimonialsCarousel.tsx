@@ -14,11 +14,11 @@ const standards = [
       "Every passenger boards via a clean rear ramp or hydraulic lift. We take the time required to securely fasten all 4-point floor tie-downs and fit safety belts without rushing.",
   },
   {
-    title: "NDIS & TUSS Transparent Billing",
+    title: "NDIS & PTSS Transparent Billing",
     icon: FileText,
     category: "Subsidies & Invoicing",
     description:
-      "We accept WA TUSS paper and electronic vouchers directly. For NDIS plan-managed and self-managed participants, we issue compliant itemised tax invoices with all trip details.",
+      "We support WA PTSS smartcards (effective 1 Oct 2025 replacing paper TUSS vouchers) and supply itemised tax invoices for NDIS participants [TODO: owner to confirm licence/registration].",
   },
   {
     title: "Punctual Advance Bookings",

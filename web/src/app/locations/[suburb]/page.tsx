@@ -36,7 +36,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!data) return {};
 
   const title = `${data.name} Wheelchair Taxi | Perth Maxi Cab 24/7`;
-  const description = `Wheelchair accessible taxi vans in ${data.name}, WA. Rear ramp & lift access, up to 10 passengers. NDIS & TUSS accepted 24/7. Call or WhatsApp +61 493 252 766.`;
+  const description = `Wheelchair accessible taxi vans in ${data.name}, WA. Rear ramp & lift access, up to 10 passengers. PTSS (formerly TUSS) & NDIS transport options 24/7. Call or WhatsApp +61 493 252 766.`;
 
   return {
     title: {
@@ -192,7 +192,7 @@ export default async function SuburbPage({ params }: Props) {
               </ul>
             </div>
             <div className="mt-6 pt-3 border-t border-zinc-800/80 text-[11px] text-zinc-400">
-              WA TUSS vouchers and itemised NDIS invoices provided for all medical transfers.
+              WA PTSS smartcards (formerly TUSS) and itemised NDIS invoices supported [TODO: owner to confirm licence/registration].
             </div>
           </div>
 
@@ -279,7 +279,7 @@ export default async function SuburbPage({ params }: Props) {
                 href="/fares"
                 className="inline-flex items-center gap-1.5 text-xs font-black text-amber-400 hover:text-amber-300 uppercase tracking-wider"
               >
-                <span>View Fares &amp; TUSS Rules</span>
+                <span>View Fares &amp; PTSS Rules</span>
                 <ArrowRight className="w-3.5 h-3.5" aria-hidden="true" />
               </Link>
               <span className="text-zinc-600 hidden sm:inline" aria-hidden="true">•</span>

@@ -53,6 +53,11 @@ const nextConfig: NextConfig = {
         destination: "/services/tours-and-events-transport",
         permanent: true,
       },
+      {
+        source: "/guides/how-to-use-tuss-wheelchair-taxi-wa",
+        destination: "/guides/how-to-use-ptss-wheelchair-taxi-wa",
+        permanent: true,
+      },
     ];
   },
 };

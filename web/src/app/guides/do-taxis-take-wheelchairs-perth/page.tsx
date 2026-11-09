@@ -8,7 +8,7 @@ import { SITE_URL, SITE_CONFIG } from "@/config/site";
 export const metadata: Metadata = {
   title: "Do Taxis Take Wheelchairs in Perth? | Accessible Taxi Guide",
   description:
-    "Do Perth taxis carry wheelchairs? Learn which vehicles accept wheelchairs, rear ramp requirements, TUSS vouchers, and how to book an accessible taxi van 24/7.",
+    "Do Perth taxis carry wheelchairs? Learn which vehicles accept wheelchairs, rear ramp requirements, PTSS smartcards (formerly TUSS), and how to book an accessible taxi van 24/7.",
   alternates: {
     canonical: `${SITE_URL}/guides/do-taxis-take-wheelchairs-perth`,
   },

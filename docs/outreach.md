@@ -29,7 +29,7 @@ High-quality backlinks in the local transport sector must be earned through real
 ### Template 1: To NDIS Support Coordinators & Healthcare Social Workers
 
 ```text
-Subject: Dedicated Wheelchair & TUSS Transport Resource for Your Perth Participants
+Subject: Dedicated Wheelchair & PTSS Transport Resource for Your Perth Participants
 
 Dear [Coordinator Name / Team],
 
@@ -37,15 +37,15 @@ My name is [Your Name], owner-operator of Perth Wheelchair Taxi Van, based local
 
 I am writing to introduce our dedicated wheelchair-accessible passenger transport service to your team. Many participants and support workers we speak with experience frequent cancellations or delays from generic taxi fleets when booking accessible rides.
 
-We operate accredited, rear-ramp Toyota HiAce commuter vans equipped with:
-• Certified 4-point Q'Straint tie-downs and lap-sash safety restraints
-• 1,550 mm vertical entrance clearance accommodating high-back electric powerchairs and manual chairs
-• Direct acceptance of WA Taxi User Subsidy Scheme (TUSS) 50% and 75% co-payment vouchers
-• Line-item, compliant tax invoices for self-managed and plan-managed NDIS participants (Core Support Category 02)
+We operate accredited, rear-ramp wheelchair taxi vans equipped with:
+• 4-point floor tie-downs and lap-sash safety restraints [TODO: confirm system with owner]
+• Generous vertical entrance clearance accommodating electric powerchairs and manual chairs
+• Support for WA Passenger Transport Subsidy Scheme (PTSS, formerly TUSS) smartcards (50% up to $25, 75% up to $35) [TODO: owner to confirm licence/registration]
+• Line-item, compliant tax invoices for self-managed and plan-managed NDIS participants (Core Support Category 02) [TODO: owner to confirm licence/registration]
 • 24/7 direct phone and WhatsApp dispatch (+61 493 252 766) with zero automated call center hold times
 
-We have created a step-by-step participant guide on navigating TUSS vouchers and booking accessible vehicles here:
-https://maxitaxi-five.vercel.app/guides/how-to-use-tuss-wheelchair-taxi-wa
+We have created a step-by-step participant guide on navigating PTSS smartcards and booking accessible vehicles here:
+https://maxitaxi-five.vercel.app/guides/how-to-use-ptss-wheelchair-taxi-wa
 
 If your team maintains an accessible transport list or resources page for participants attending regular appointments across Greater Perth, we would be honored to be considered. 
 

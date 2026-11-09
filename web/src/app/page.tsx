@@ -30,21 +30,21 @@ import CoreServicesCarousel from "@/components/home/CoreServicesCarousel";
 import HowItWorks from "@/components/home/HowItWorks";
 import ServiceAreaSection from "@/components/home/ServiceAreaSection";
 import JsonLd from "@/components/seo/JsonLd";
-import { SITE_URL, SITE_CONFIG } from "@/config/site";
+import { SITE_URL, SITE_CONFIG, CONFIG_FLAGS } from "@/config/site";
 
 export const metadata: Metadata = {
   title: {
     absolute: "Wheelchair Taxi & Maxi Taxi Perth | Accessible Vans 24/7",
   },
   description:
-    "Perth wheelchair accessible taxi vans and 10-seater maxi cabs with rear ramp or lift access. WA TUSS vouchers & NDIS accepted. Call or WhatsApp +61 493 252 766.",
+    "Perth wheelchair accessible taxi vans and 10-seater maxi cabs with rear ramp or lift access. WA PTSS (formerly TUSS) & NDIS transport options. Call or WhatsApp +61 493 252 766.",
   alternates: {
     canonical: SITE_URL,
   },
   openGraph: {
     title: "Wheelchair Taxi & Maxi Taxi Perth | Accessible Vans 24/7",
     description:
-      "Perth wheelchair accessible taxi vans and 10-seater maxi cabs with rear ramp or lift access. WA TUSS vouchers & NDIS accepted. Call or WhatsApp +61 493 252 766.",
+      "Perth wheelchair accessible taxi vans and 10-seater maxi cabs with rear ramp or lift access. WA PTSS (formerly TUSS) & NDIS transport options. Call or WhatsApp +61 493 252 766.",
     url: SITE_URL,
     type: "website",
     siteName: SITE_CONFIG.name,
@@ -62,7 +62,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Wheelchair Taxi & Maxi Taxi Perth | Accessible Vans 24/7",
     description:
-      "Perth wheelchair accessible taxi vans and 10-seater maxi cabs with rear ramp or lift access. WA TUSS vouchers & NDIS accepted. Call or WhatsApp +61 493 252 766.",
+      "Perth wheelchair accessible taxi vans and 10-seater maxi cabs with rear ramp or lift access. WA PTSS (formerly TUSS) & NDIS transport options. Call or WhatsApp +61 493 252 766.",
     images: [`${SITE_URL}/images/og-image.jpg`],
   },
 };
@@ -76,7 +76,7 @@ const homePageSchema = {
       url: SITE_URL,
       name: "Wheelchair Taxi & Maxi Taxi Perth | Accessible Vans 24/7",
       description:
-        "Perth wheelchair accessible taxi vans and 10-seater maxi cabs with rear ramp or lift access. WA TUSS vouchers & NDIS accepted 24/7.",
+        "Perth wheelchair accessible taxi vans and 10-seater maxi cabs with rear ramp or lift access. WA PTSS (formerly TUSS) & NDIS transport options 24/7.",
       inLanguage: "en-AU",
       isPartOf: {
         "@id": `${SITE_URL}/#website`,
@@ -157,7 +157,7 @@ export default function Home() {
               <p className="text-[clamp(0.95rem,2.8vw,1rem)] sm:text-[1.15rem] lg:text-[clamp(1.2rem,1.7vw,1.5rem)] font-semibold sm:font-bold text-white/95 leading-snug text-balance max-w-[24rem] sm:max-w-[40ch] drop-shadow-[0_3px_12px_rgba(0,0,0,0.95)]">
                 Accessible wheelchair vans &amp; 10-seater maxi cabs across Perth.{" "}
                 <span className="text-amber-400 [text-shadow:0_2px_10px_rgba(0,0,0,0.95)]">
-                  NDIS &amp; TUSS accepted 24/7.
+                  {CONFIG_FLAGS.ptssSubsidyAccepted ? "PTSS & NDIS accepted 24/7." : "Accessible Transport 24/7."}
                 </span>
               </p>
             </div>
@@ -210,7 +210,7 @@ export default function Home() {
             Perth Wheelchair Accessible Taxi &amp; 10-Seater Maxi Cab Service
           </h2>
           <p className="text-sm sm:text-base text-zinc-300 leading-relaxed max-w-3xl mx-auto mb-6">
-            Looking for a dependable wheelchair taxi or 10-seater maxi cab in Perth? Based in Girrawheen WA, Perth Wheelchair Taxi Van delivers 24/7 commercial passenger transport fitted with certified rear ramps or hydraulic lifts and 4-point floor tie-downs. We accept Western Australia TUSS vouchers, supply itemised NDIS tax invoices, and guarantee upfront fixed quotes for Perth Airport transfers, medical appointments, and group travel.
+            Looking for a dependable wheelchair taxi or 10-seater maxi cab in Perth? Based in Girrawheen WA, Perth Wheelchair Taxi Van delivers 24/7 commercial passenger transport fitted with rear ramps or hydraulic lifts and 4-point floor tie-downs. We support Western Australia PTSS smartcards (formerly TUSS), provide NDIS tax invoices, and offer upfront fixed quotes for Perth Airport transfers, medical appointments, and group travel. {CONFIG_FLAGS.ptssSubsidyAccepted && CONFIG_FLAGS.ndisBillingAccepted ? "" : "[TODO: owner to confirm licence/registration for PTSS card & NDIS billing]."}
           </p>
 
           <div className="flex flex-wrap items-center justify-center gap-3 sm:gap-4 text-xs sm:text-sm font-bold">
@@ -234,7 +234,7 @@ export default function Home() {
               href="/fares"
               className="inline-flex items-center gap-1.5 text-amber-400 hover:text-amber-300 underline underline-offset-4"
             >
-              <span>Fares &amp; TUSS Guide</span>
+              <span>Fares &amp; PTSS Guide</span>
               <ArrowRight className="w-3.5 h-3.5" aria-hidden="true" />
             </Link>
             <span className="text-zinc-600 hidden sm:inline" aria-hidden="true">•</span>

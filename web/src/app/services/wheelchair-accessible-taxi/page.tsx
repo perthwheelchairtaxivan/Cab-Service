@@ -5,19 +5,19 @@ import Link from "next/link";
 import SlideUp from "@/components/animations/SlideUp";
 import RelatedServices from "@/components/services/RelatedServices";
 import JsonLd from "@/components/seo/JsonLd";
-import { SITE_URL, SITE_CONFIG } from "@/config/site";
+import { SITE_URL, SITE_CONFIG, CONFIG_FLAGS } from "@/config/site";
 
 export const metadata: Metadata = {
   title: "Wheelchair Taxi Service Perth | Accessible Transport 24/7",
   description:
-    "Perth wheelchair accessible taxi vans with rear ramp or hydraulic lift. Travel seated in your wheelchair. Up to 10 passengers. NDIS & TUSS accepted 24/7.",
+    "Perth wheelchair accessible taxi vans with rear ramp or hydraulic lift. Travel seated in your wheelchair. Up to 10 passengers. WA PTSS (formerly TUSS) & NDIS transport options 24/7.",
   alternates: {
     canonical: `${SITE_URL}/services/wheelchair-accessible-taxi`,
   },
   openGraph: {
     title: "Wheelchair Taxi Service Perth | Accessible Transport 24/7",
     description:
-      "Perth wheelchair accessible taxi vans with rear ramp or hydraulic lift. Travel seated in your wheelchair. Up to 10 passengers. NDIS & TUSS accepted 24/7.",
+      "Perth wheelchair accessible taxi vans with rear ramp or hydraulic lift. Travel seated in your wheelchair. Up to 10 passengers. WA PTSS (formerly TUSS) & NDIS transport options 24/7.",
     url: `${SITE_URL}/services/wheelchair-accessible-taxi`,
     type: "website",
     siteName: SITE_CONFIG.name,
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Wheelchair Taxi Service Perth | Accessible Transport 24/7",
     description:
-      "Perth wheelchair accessible taxi vans with rear ramp or hydraulic lift. NDIS & WA TUSS accepted 24/7.",
+      "Perth wheelchair accessible taxi vans with rear ramp or hydraulic lift. WA PTSS (formerly TUSS) & NDIS transport options 24/7.",
     images: [`${SITE_URL}/images/og-image.jpg`],
   },
 };
@@ -48,7 +48,7 @@ const serviceSchema = {
       "@id": `${SITE_URL}/services/wheelchair-accessible-taxi#service`,
       name: "Wheelchair Accessible Taxi Service Perth",
       description:
-        "Wheelchair accessible taxi vans in Perth with rear foldout ramp or hydraulic lift, carrying up to 10 passengers. WA TUSS vouchers and NDIS tax invoices accepted 24/7.",
+        "Wheelchair accessible taxi vans in Perth with rear foldout ramp or hydraulic lift, carrying up to 10 passengers. WA PTSS (formerly TUSS) smartcard and NDIS transport options 24/7.",
       provider: {
         "@type": "TaxiService",
         "@id": `${SITE_URL}/#business`,
@@ -104,7 +104,7 @@ export default function WheelchairTaxiPage() {
             </h1>
             {/* Answer-first 50-word opening paragraph */}
             <p className="text-sm sm:text-base text-zinc-300 leading-relaxed max-w-3xl mx-auto font-normal">
-              Perth Wheelchair Taxi Van provides dedicated wheelchair accessible transport across the Perth metropolitan area 24/7. Equipped with rear foldout ramps or hydraulic lifts and certified four-point floor tie-downs, our long-wheelbase vans carry manual chairs, electric powerchairs, and mobility scooters. We accept WA TUSS vouchers and provide itemised NDIS invoices.
+              Perth Wheelchair Taxi Van provides dedicated wheelchair accessible transport across the Perth metropolitan area 24/7. Equipped with rear foldout ramps or hydraulic lifts and heavy-duty four-point floor tie-downs, our long-wheelbase vans carry manual chairs, electric powerchairs, and mobility scooters. We support WA PTSS smartcards (formerly TUSS) and provide NDIS invoices. {CONFIG_FLAGS.ptssSubsidyAccepted && CONFIG_FLAGS.ndisBillingAccepted ? "" : "[TODO: owner to confirm licence/registration for PTSS card & NDIS billing]."}
             </p>
 
             <div className="mt-6 flex flex-wrap items-center justify-center gap-3">
@@ -145,14 +145,14 @@ export default function WheelchairTaxiPage() {
               Wheelchair Compatibility &amp; Requirements
             </h3>
             <p>
-              We carry standard manual wheelchairs, heavy motorized electric powerchairs, transit chairs, and four-wheel mobility scooters. If your chair has specialized lateral supports, headrests, or elevated leg rests, our generous 1,550 mm vertical entrance clearance ensures plenty of room. Please inform us of your chair dimensions when booking so we allocate the best vehicle configuration.
+              We carry standard manual wheelchairs, heavy motorized electric powerchairs, transit chairs, and four-wheel mobility scooters. If your chair has specialized lateral supports, headrests, or elevated leg rests, our generous vertical entrance clearance (approx. 1,500–1,550 mm [TODO: confirm exact dimensions with owner]) ensures room. Please inform us of your chair dimensions when booking so we allocate the best vehicle configuration.
             </p>
 
             <h3 className="text-lg font-black text-white uppercase tracking-tight pt-2">
-              WA TUSS &amp; NDIS Billing Options
+              WA PTSS &amp; NDIS Billing Options {CONFIG_FLAGS.ptssSubsidyAccepted ? "" : "[TODO: owner to confirm licence/registration]"}
             </h3>
             <p>
-              We accept Western Australia <strong>Taxi User Subsidy Scheme (TUSS)</strong> voucher books directly, providing 50% or 75% co-payment discounts off your metered fare. If you are an NDIS participant funded under Core Supports — Transport, we issue formal tax receipts with registered ABN, driver details, and trip itinerary for effortless plan-manager reimbursement.
+              Effective 1 October 2025, paper TUSS vouchers have been replaced by the WA Department of Transport&apos;s electronic Passenger Transport Subsidy Scheme (PTSS) card. The standard subsidy covers 50% up to $25 per trip, and the wheelchair subsidy covers 75% up to $35 per trip in an authorized wheelchair-accessible taxi. If you are an NDIS participant funded under Core Supports — Transport, we issue formal tax invoices with registered ABN and trip details. {CONFIG_FLAGS.ptssSubsidyAccepted && CONFIG_FLAGS.ndisBillingAccepted ? "" : "[TODO: owner to confirm licence/registration for PTSS card & NDIS billing]."}
             </p>
           </div>
 

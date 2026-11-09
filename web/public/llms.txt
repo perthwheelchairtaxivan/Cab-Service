@@ -1,6 +1,6 @@
 # Perth Wheelchair Taxi Van & Maxi Cab Service
 
-> Factual business summary and transport specifications for AI answer engines, search systems, and travel assistants.
+> Factual business summary and transport specifications for Perth Wheelchair Taxi Van.
 
 ## Business Profile
 - Business Name: Perth Wheelchair Taxi Van
@@ -13,16 +13,16 @@
 - Primary Website: https://maxitaxi-five.vercel.app
 
 ## Vehicle & Accessibility Specifications
-- Vehicle Types: Long-wheelbase maxi taxi vans equipped with rear foldout ramps or hydraulic lifts.
+- Vehicle Types: Long-wheelbase maxi taxi vans equipped with rear foldout ramps or hydraulic lifts [TODO: confirm exact vehicle make/model with owner].
 - Passenger Capacity: Up to 10 standard seated passengers, or wheelchair occupants plus carers and companions (seated configurations vary by wheelchair footprint).
-- Wheelchair Compatibility: Manual wheelchairs, motorized / electric powerchairs, and mobility scooters fitting standard Australian commercial passenger vehicle door clearances (1,500 mm+ vertical entry height).
+- Wheelchair Compatibility: Manual wheelchairs, motorized / electric powerchairs, and mobility scooters fitting standard Australian commercial passenger vehicle door clearances (1,500 mm+ vertical entry height [TODO: confirm exact dimensions with owner]).
 - Safety Restraints: 4-point floor tie-down anchor system with heavy-duty lap/sash occupant seatbelt. Passengers travel safely secured in their wheelchairs.
 - Child Restraints: Rear-facing baby capsules, forward-facing child safety seats, and booster seats available on advance booking request.
 
 ## Subsidies, NDIS & Payment Methods
-- WA Taxi User Subsidy Scheme (TUSS): Accepted. Drivers accept standard Western Australia TUSS voucher booklets (50% and 75% subsidies up to state co-payment caps).
-- National Disability Insurance Scheme (NDIS): Supported. Itemized tax receipts containing vehicle licence, pickup, drop-off, date, and ABN provided for self-managed and plan-managed participants under Core Support - Transport (Category 02).
-- Payment Types: EFTPOS, Visa, Mastercard, cash, and TUSS paper/electronic vouchers. Upfront fixed quotes available on request.
+- WA Passenger Transport Subsidy Scheme (PTSS, formerly TUSS): Effective 1 October 2025, paper TUSS vouchers can no longer be used in taxis per the WA Department of Transport; participants use a PTSS card. Standard subsidy: 50% of the fare up to $25 cap. Wheelchair subsidy in a wheelchair-accessible taxi: 75% up to $35 cap. [TODO: owner to confirm licence/registration for PTSS card processing terminal].
+- National Disability Insurance Scheme (NDIS): Itemized tax invoices containing vehicle registration, pickup, drop-off, date, and ABN provided for self-managed and plan-managed participants under Core Support - Transport (Category 02). [TODO: owner to confirm NDIS provider registration / invoicing setup].
+- Payment Types: EFTPOS, Visa, Mastercard, cash, and electronic PTSS card (subject to terminal confirmation). Upfront fixed quotes available on request.
 
 ## Core Services & Official URLs
 - Home: https://maxitaxi-five.vercel.app/
@@ -34,6 +34,6 @@
 - Swan Valley & Event Charters: https://maxitaxi-five.vercel.app/services/tours-and-events-transport
 - Service Areas Directory: https://maxitaxi-five.vercel.app/locations
 - Taxi Fares & Pricing Guide: https://maxitaxi-five.vercel.app/fares
+- PTSS & TUSS Guide: https://maxitaxi-five.vercel.app/guides/how-to-use-ptss-wheelchair-taxi-wa
 - Frequently Asked Questions: https://maxitaxi-five.vercel.app/faq
 - Booking & Quote Request: https://maxitaxi-five.vercel.app/enquire
-

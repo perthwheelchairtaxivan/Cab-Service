@@ -15,12 +15,12 @@ const services = [
   },
   {
     title: "NDIS & Medical Transport",
-    tagline: "NDIS · WA TUSS · Hospital",
+    tagline: "NDIS · WA PTSS · Hospital",
     iconName: "HeartPulse",
     gradient: "rose" as const,
-    features: ["Hospital Transfers", "WA TUSS Vouchers", "Itemised NDIS Invoices"],
+    features: ["Hospital Transfers", "WA PTSS Smartcards", "Itemised NDIS Invoices"],
     serviceHref: "/services/medical-ndis-transport",
-    badgeText: "NDIS & TUSS",
+    badgeText: "NDIS & PTSS",
   },
   {
     title: "Group Maxi Cab",

@@ -16,7 +16,7 @@ const ALL_SERVICES: ServiceLinkItem[] = [
   {
     title: "NDIS & Medical Transport",
     slug: "medical-ndis-transport",
-    desc: "Hospital visits, therapy appointments, itemised NDIS invoices and WA TUSS vouchers.",
+    desc: "Hospital visits, therapy appointments, itemised NDIS invoices and WA PTSS smartcards.",
   },
   {
     title: "Group Maxi Cab Charters",

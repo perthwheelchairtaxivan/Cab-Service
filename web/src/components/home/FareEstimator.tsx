@@ -160,7 +160,7 @@ export default function FareEstimator() {
       <div className="mt-4 flex items-center justify-between text-[11px] text-slate-400 border-t border-slate-800/60 pt-3">
         <span className="flex items-center gap-1">
           <ShieldCheck className="w-3.5 h-3.5 text-emerald-400" />
-          TUSS vouchers apply for wheelchair rides
+          PTSS smartcard (ex-TUSS) subsidy applies for wheelchair rides
         </span>
         <span>Standard WA DoT Regulated Fares</span>
       </div>

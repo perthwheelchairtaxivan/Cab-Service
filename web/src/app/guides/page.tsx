@@ -6,16 +6,16 @@ import JsonLd from "@/components/seo/JsonLd";
 import { SITE_URL, SITE_CONFIG } from "@/config/site";
 
 export const metadata: Metadata = {
-  title: "Perth Wheelchair Taxi Guides | TUSS, NDIS & Travel Tips",
+  title: "Perth Wheelchair Taxi Guides | PTSS, NDIS & Travel Tips",
   description:
-    "Authoritative transport guides for Perth wheelchair users, carers, and group travellers. Learn how WA TUSS subsidies work, NDIS invoices, and vehicle booking requirements.",
+    "Authoritative transport guides for Perth wheelchair users, carers, and group travellers. Learn how WA PTSS subsidies (formerly TUSS) work, NDIS invoices, and vehicle booking requirements.",
   alternates: {
     canonical: `${SITE_URL}/guides`,
   },
   openGraph: {
-    title: "Perth Wheelchair Taxi Guides | TUSS, NDIS & Travel Tips",
+    title: "Perth Wheelchair Taxi Guides | PTSS, NDIS & Travel Tips",
     description:
-      "Authoritative transport guides for Perth wheelchair users, carers, and group travellers. Learn how WA TUSS subsidies work, NDIS invoices, and vehicle booking requirements.",
+      "Authoritative transport guides for Perth wheelchair users, carers, and group travellers. Learn how WA PTSS subsidies (formerly TUSS) work, NDIS invoices, and vehicle booking requirements.",
     url: `${SITE_URL}/guides`,
     type: "website",
     siteName: SITE_CONFIG.name,
@@ -42,10 +42,10 @@ export const GUIDES = [
     icon: Accessibility,
   },
   {
-    slug: "how-to-use-tuss-wheelchair-taxi-wa",
-    title: "How to Use TUSS for Wheelchair Taxi Trips in WA",
+    slug: "how-to-use-ptss-wheelchair-taxi-wa",
+    title: "How to Use PTSS for Wheelchair Taxi Trips in WA (Formerly TUSS)",
     description:
-      "Step-by-step instructions on using Western Australia's Taxi User Subsidy Scheme (TUSS): 50% vs 75% vouchers, driver completion, and payment rules.",
+      "Step-by-step instructions on WA's Passenger Transport Subsidy Scheme (PTSS): smartcards replacing paper TUSS vouchers from 1 Oct 2025, 50% & 75% caps ($25 & $35), and payment rules.",
     tag: "Government Subsidies",
     readTime: "5 min read",
     icon: FileText,

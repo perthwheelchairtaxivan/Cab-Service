@@ -9,7 +9,7 @@ import MobileContactBar from "@/components/layout/MobileContactBar";
 import FloatingWhatsApp from "@/components/layout/FloatingWhatsApp";
 import SmoothScrollProvider from "@/components/providers/SmoothScrollProvider";
 import { Analytics } from "@vercel/analytics/react";
-import { SITE_URL, SITE_CONFIG } from "@/config/site";
+import { SITE_URL, SITE_CONFIG, CONFIG_FLAGS } from "@/config/site";
 import JsonLd from "@/components/seo/JsonLd";
 
 const inter = Inter({
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     template: "%s | Perth Wheelchair Taxi Van",
   },
   description:
-    "Perth wheelchair accessible taxi vans and 10-seater maxi cabs with rear ramp or lift access. WA TUSS vouchers & NDIS accepted. Call or WhatsApp +61 493 252 766.",
+    "Perth wheelchair accessible taxi vans and 10-seater maxi cabs with rear ramp or lift access. WA PTSS (formerly TUSS) & NDIS transport options. Call or WhatsApp +61 493 252 766.",
   applicationName: "Perth Wheelchair Taxi Van",
   authors: [{ name: "Perth Wheelchair Taxi Van" }],
   generator: "Next.js",
@@ -40,7 +40,8 @@ export const metadata: Metadata = {
     "wheelchair taxi perth",
     "accessible taxi perth",
     "ndis wheelchair taxi perth",
-    "wa tuss taxi perth",
+    "wa ptss taxi perth",
+    "wa tuss taxi perth (formerly tuss)",
     "perth maxi taxi",
     "perth airport maxi taxi",
     "maxi cab girrawheen",
@@ -75,7 +76,7 @@ export const metadata: Metadata = {
     url: SITE_URL,
     title: "Wheelchair Taxi & Maxi Taxi Perth | Accessible Vans 24/7",
     description:
-      "Perth wheelchair accessible taxi vans and 10-seater maxi cabs with rear ramp or lift access. WA TUSS vouchers & NDIS accepted. Call or WhatsApp +61 493 252 766.",
+      "Perth wheelchair accessible taxi vans and 10-seater maxi cabs with rear ramp or lift access. WA PTSS (formerly TUSS) & NDIS transport options. Call or WhatsApp +61 493 252 766.",
     images: [
       {
         url: `${SITE_URL}/images/perth-wheelchair-taxi-hero.jpg`,
@@ -90,7 +91,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Wheelchair Taxi & Maxi Taxi Perth | Accessible Vans 24/7",
     description:
-      "Perth wheelchair accessible taxi vans and 10-seater maxi cabs with rear ramp or lift access. WA TUSS vouchers & NDIS accepted. Call or WhatsApp +61 493 252 766.",
+      "Perth wheelchair accessible taxi vans and 10-seater maxi cabs with rear ramp or lift access. WA PTSS (formerly TUSS) & NDIS transport options. Call or WhatsApp +61 493 252 766.",
     images: [`${SITE_URL}/images/perth-wheelchair-taxi-hero.jpg`],
   },
   verification: {
@@ -115,7 +116,9 @@ const businessSchema = {
       image: `${SITE_URL}/images/og-image.jpg`,
       priceRange: "$$",
       currenciesAccepted: "AUD",
-      paymentAccepted: "Cash, Credit Card, EFTPOS, WA TUSS Vouchers, NDIS Itemized Invoice",
+      paymentAccepted: CONFIG_FLAGS.ptssSubsidyAccepted && CONFIG_FLAGS.ndisBillingAccepted
+        ? "Cash, Credit Card, EFTPOS, WA PTSS Smartcard, NDIS Itemized Invoice"
+        : "Cash, Credit Card, EFTPOS [PTSS Smartcard and NDIS invoicing pending owner licence confirmation]",
       address: {
         "@type": "PostalAddress",
         addressLocality: SITE_CONFIG.baseLocation.suburb,
@@ -148,12 +151,12 @@ const businessSchema = {
       amenityFeature: [
         {
           "@type": "LocationFeatureSpecification",
-          name: "Wheelchair Accessible Rear Ramp or Hydraulic Lift",
+          name: "Wheelchair Accessible Rear Ramp or Hydraulic Lift [TODO: confirm exact model with owner]",
           value: true,
         },
         {
           "@type": "LocationFeatureSpecification",
-          name: "4-Point Heavy-Duty Floor Tie-Down Anchors",
+          name: "4-Point Heavy-Duty Floor Tie-Down Anchors [TODO: confirm system with owner]",
           value: true,
         },
         {

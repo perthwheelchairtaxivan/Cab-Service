@@ -5,19 +5,19 @@ import Link from "next/link";
 import SlideUp from "@/components/animations/SlideUp";
 import RelatedServices from "@/components/services/RelatedServices";
 import JsonLd from "@/components/seo/JsonLd";
-import { SITE_URL, SITE_CONFIG } from "@/config/site";
+import { SITE_URL, SITE_CONFIG, CONFIG_FLAGS } from "@/config/site";
 
 export const metadata: Metadata = {
-  title: "NDIS Wheelchair Taxi Perth | TUSS & Medical Transport",
+  title: "NDIS Wheelchair Taxi Perth | PTSS & Medical Transport",
   description:
-    "NDIS and medical appointment transport across Perth. WA TUSS vouchers accepted, itemised NDIS invoices, hospital transfers with rear ramp vans.",
+    "NDIS and medical appointment transport across Perth. WA PTSS smartcard information (formerly TUSS), NDIS invoice options, hospital transfers with rear ramp vans.",
   alternates: {
     canonical: `${SITE_URL}/services/medical-ndis-transport`,
   },
   openGraph: {
-    title: "NDIS Wheelchair Taxi Perth | TUSS & Medical Transport",
+    title: "NDIS Wheelchair Taxi Perth | PTSS & Medical Transport",
     description:
-      "Specialised medical appointment and NDIS transport in Perth. Rear ramp wheelchair vans, WA TUSS subsidies, and itemised tax invoices.",
+      "Specialised medical appointment and NDIS transport in Perth. Rear ramp wheelchair vans, WA PTSS subsidies (formerly TUSS), and itemised tax invoices.",
     url: `${SITE_URL}/services/medical-ndis-transport`,
     type: "website",
     siteName: SITE_CONFIG.name,
@@ -33,9 +33,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "NDIS Wheelchair Taxi Perth | TUSS & Medical Transport",
+    title: "NDIS Wheelchair Taxi Perth | PTSS & Medical Transport",
     description:
-      "NDIS and medical appointment transport across Perth. WA TUSS vouchers accepted, itemised NDIS invoices, hospital transfers with rear ramp vans.",
+      "NDIS and medical appointment transport across Perth. WA PTSS subsidies (formerly TUSS), NDIS invoices, hospital transfers with rear ramp vans.",
     images: [`${SITE_URL}/images/og-image.jpg`],
   },
 };
@@ -48,7 +48,7 @@ const serviceSchema = {
       "@id": `${SITE_URL}/services/medical-ndis-transport#service`,
       name: "NDIS & Medical Appointment Wheelchair Transport Perth",
       description:
-        "Specialised hospital transfers, dialysis, outpatient clinics, and NDIS transport across Perth. WA TUSS voucher acceptance and itemised invoicing.",
+        "Specialised hospital transfers, dialysis, outpatient clinics, and NDIS transport across Perth. WA PTSS (formerly TUSS) subsidy details and itemised invoicing.",
       provider: {
         "@type": "TaxiService",
         "@id": `${SITE_URL}/#business`,
@@ -102,7 +102,7 @@ export default function MedicalNDISPage() {
             </h1>
             {/* Answer-first 50-word opening paragraph */}
             <p className="text-sm sm:text-base text-zinc-300 leading-relaxed max-w-3xl mx-auto font-normal">
-              Perth Wheelchair Taxi Van provides dedicated medical transport and NDIS travel across all Perth hospitals and therapy clinics. We accept Western Australia TUSS vouchers, supply compliant itemised NDIS invoices for self-managed and plan-managed participants, and ensure punctual curbside pickup with rear ramps and certified tie-downs.
+              Perth Wheelchair Taxi Van provides dedicated medical transport and NDIS travel across all Perth hospitals and therapy clinics. We support Western Australia PTSS smartcards (formerly TUSS), supply compliant itemised NDIS invoices, and ensure punctual curbside pickup with rear ramps and certified tie-downs. {CONFIG_FLAGS.ptssSubsidyAccepted && CONFIG_FLAGS.ndisBillingAccepted ? "" : "[TODO: owner to confirm licence/registration for PTSS card & NDIS billing]."}
             </p>
 
             <div className="mt-6 flex flex-wrap items-center justify-center gap-3">
@@ -140,17 +140,17 @@ export default function MedicalNDISPage() {
             </p>
 
             <h3 className="text-lg font-black text-white uppercase tracking-tight pt-2">
-              NDIS Core Support (Category 02) Compliance
+              NDIS Core Support (Category 02) Invoicing {CONFIG_FLAGS.ndisBillingAccepted ? "" : "[TODO: owner to confirm licence/registration]"}
             </h3>
             <p>
-              If your NDIS plan includes funding for <strong>Core Supports — Transport (Category 02)</strong>, you can use our service with complete confidence. For self-managed participants, we issue instant digital tax invoices with registered ABN and trip details for quick claiming on the myplace portal. For plan-managed participants, we email invoices directly to your plan manager for automated payment.
+              If your NDIS plan includes funding for <strong>Core Supports — Transport (Category 02)</strong>, you can use our service. For self-managed participants, we issue digital tax invoices with registered ABN and trip details for claiming on the myplace portal. For plan-managed participants, we email invoices directly to your plan manager for automated payment. {CONFIG_FLAGS.ndisBillingAccepted ? "" : "[TODO: owner to confirm NDIS provider registration]."}
             </p>
 
             <h3 className="text-lg font-black text-white uppercase tracking-tight pt-2">
-              WA TUSS Voucher Booklet Acceptance
+              WA PTSS Smartcard Subsidy (Formerly TUSS) {CONFIG_FLAGS.ptssSubsidyAccepted ? "" : "[TODO: owner to confirm licence/registration]"}
             </h3>
             <p>
-              We gladly accept Western Australia Taxi User Subsidy Scheme vouchers. If you carry 50% or 75% TUSS vouchers, your driver deducts the state subsidy directly from your metered fare at the end of the trip, leaving you only the remaining co-payment to settle via card or cash.
+              Effective 1 October 2025, paper TUSS vouchers have been replaced by the WA Department of Transport&apos;s electronic Passenger Transport Subsidy Scheme (PTSS) smartcard. The standard subsidy covers 50% up to $25 per trip, and the wheelchair subsidy covers 75% up to $35 per trip in an authorized wheelchair-accessible taxi. {CONFIG_FLAGS.ptssSubsidyAccepted ? "Your driver processes your PTSS card through the vehicle terminal, leaving only the remaining co-payment to settle." : "[TODO: owner to confirm licence/registration for PTSS card processing terminal]."}
             </p>
           </div>
 

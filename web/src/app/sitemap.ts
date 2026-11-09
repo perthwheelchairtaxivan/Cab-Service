@@ -16,7 +16,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "/locations", changeFrequency: "weekly" as const, priority: 0.9 },
     { path: "/guides", changeFrequency: "weekly" as const, priority: 0.85 },
     { path: "/guides/do-taxis-take-wheelchairs-perth", changeFrequency: "monthly" as const, priority: 0.8 },
-    { path: "/guides/how-to-use-tuss-wheelchair-taxi-wa", changeFrequency: "monthly" as const, priority: 0.8 },
+    { path: "/guides/how-to-use-ptss-wheelchair-taxi-wa", changeFrequency: "monthly" as const, priority: 0.8 },
     { path: "/guides/ndis-transport-perth", changeFrequency: "monthly" as const, priority: 0.8 },
     { path: "/guides/maxi-taxi-vs-two-taxis-perth", changeFrequency: "monthly" as const, priority: 0.8 },
     { path: "/faq", changeFrequency: "weekly" as const, priority: 0.8 },
