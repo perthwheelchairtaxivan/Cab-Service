@@ -108,6 +108,8 @@ export default function Header() {
                 onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
                 className="w-10 h-10 rounded-full backdrop-blur-md bg-white/10 border border-white/20 flex items-center justify-center text-white shrink-0 active:scale-95 transition-transform"
                 aria-label={mobileMenuOpen ? "Close menu" : "Open menu"}
+                aria-expanded={mobileMenuOpen}
+                aria-controls="mobile-navigation"
               >
                 {mobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
               </button>
@@ -118,7 +120,7 @@ export default function Header() {
         {/* Mobile Drawer */}
         {mobileMenuOpen && (
           <div className="lg:hidden backdrop-blur-2xl bg-black/90 border-t border-white/10">
-            <nav className="flex flex-col px-5 py-6 gap-1">
+            <nav id="mobile-navigation" aria-label="Mobile Navigation" className="flex flex-col px-5 py-6 gap-1">
               {navLinks.map((link) => (
                 <Link
                   key={link.href}

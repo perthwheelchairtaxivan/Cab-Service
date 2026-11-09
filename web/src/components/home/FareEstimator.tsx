@@ -108,13 +108,14 @@ export default function FareEstimator() {
 
       {/* Route Selector */}
       <div className="space-y-2 mb-5">
-        <label className="text-xs font-semibold text-slate-300 uppercase tracking-wider block">
+        <label htmlFor="fare-route-select" className="text-xs font-semibold text-slate-300 uppercase tracking-wider block">
           Select Popular Route:
         </label>
         <select
+          id="fare-route-select"
           value={selectedRouteIdx}
           onChange={(e) => setSelectedRouteIdx(Number(e.target.value))}
-          className="w-full bg-slate-800 border border-slate-700 text-white rounded-xl px-4 py-3 text-sm focus:ring-2 focus:ring-emerald-500 outline-none"
+          className="w-full bg-slate-800 border border-slate-700 text-white rounded-xl px-4 py-3 text-sm focus:ring-2 focus:ring-emerald-500 outline-none cursor-pointer"
         >
           {sampleRoutes.map((r, i) => (
             <option key={i} value={i}>

@@ -197,10 +197,11 @@ export default function ContactForm() {
         {/* Row 1: Name & Phone */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           <div>
-            <label className="block text-xs font-black uppercase tracking-wider text-white mb-1.5">
+            <label htmlFor="contact-name" className="block text-xs font-black uppercase tracking-wider text-white mb-1.5">
               Your Name <span className="text-amber-400">*</span>
             </label>
             <input
+              id="contact-name"
               type="text"
               name="name"
               required
@@ -212,10 +213,11 @@ export default function ContactForm() {
           </div>
 
           <div>
-            <label className="block text-xs font-black uppercase tracking-wider text-white mb-1.5">
+            <label htmlFor="contact-phone" className="block text-xs font-black uppercase tracking-wider text-white mb-1.5">
               Phone Number <span className="text-amber-400">*</span>
             </label>
             <input
+              id="contact-phone"
               type="tel"
               name="phone"
               required
@@ -230,10 +232,11 @@ export default function ContactForm() {
         {/* Row 2: Service & Passengers */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           <div>
-            <label className="block text-xs font-black uppercase tracking-wider text-white mb-1.5">
+            <label htmlFor="contact-service" className="block text-xs font-black uppercase tracking-wider text-white mb-1.5">
               Service Type
             </label>
             <select
+              id="contact-service"
               name="service"
               value={formData.service}
               onChange={handleChange}
@@ -249,10 +252,11 @@ export default function ContactForm() {
           </div>
 
           <div>
-            <label className="block text-xs font-black uppercase tracking-wider text-white mb-1.5">
+            <label htmlFor="contact-passengers" className="block text-xs font-black uppercase tracking-wider text-white mb-1.5">
               Passengers
             </label>
             <select
+              id="contact-passengers"
               name="passengers"
               value={formData.passengers}
               onChange={handleChange}
@@ -269,10 +273,11 @@ export default function ContactForm() {
         {/* Row 3: Pickup & Dropoff */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           <div>
-            <label className="block text-xs font-black uppercase tracking-wider text-white mb-1.5">
+            <label htmlFor="contact-pickup" className="block text-xs font-black uppercase tracking-wider text-white mb-1.5">
               Pickup Suburb / Airport
             </label>
             <input
+              id="contact-pickup"
               type="text"
               name="pickup"
               value={formData.pickup}
@@ -283,10 +288,11 @@ export default function ContactForm() {
           </div>
 
           <div>
-            <label className="block text-xs font-black uppercase tracking-wider text-white mb-1.5">
+            <label htmlFor="contact-destination" className="block text-xs font-black uppercase tracking-wider text-white mb-1.5">
               Destination Suburb
             </label>
             <input
+              id="contact-destination"
               type="text"
               name="destination"
               value={formData.destination}
@@ -300,10 +306,11 @@ export default function ContactForm() {
         {/* Row 4: Date & Time */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           <div>
-            <label className="block text-xs font-black uppercase tracking-wider text-white mb-1.5">
+            <label htmlFor="contact-date" className="block text-xs font-black uppercase tracking-wider text-white mb-1.5">
               Pickup Date
             </label>
             <input
+              id="contact-date"
               type="date"
               name="date"
               value={formData.date}
@@ -313,10 +320,11 @@ export default function ContactForm() {
           </div>
 
           <div>
-            <label className="block text-xs font-black uppercase tracking-wider text-white mb-1.5">
+            <label htmlFor="contact-time" className="block text-xs font-black uppercase tracking-wider text-white mb-1.5">
               Approx. Time
             </label>
             <input
+              id="contact-time"
               type="time"
               name="time"
               value={formData.time}
@@ -328,10 +336,11 @@ export default function ContactForm() {
 
         {/* Row 5: Notes / Requirements */}
         <div>
-          <label className="block text-xs font-black uppercase tracking-wider text-white mb-1.5">
+          <label htmlFor="contact-notes" className="block text-xs font-black uppercase tracking-wider text-white mb-1.5">
             Special Requirements / Luggage Notes
           </label>
           <textarea
+            id="contact-notes"
             name="notes"
             rows={2}
             value={formData.notes}

@@ -370,11 +370,12 @@ export default function EnquiryForm() {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           <div>
-            <label className="block text-xs font-black uppercase tracking-wider text-zinc-200 mb-1.5 flex items-center gap-1.5">
+            <label htmlFor="enquiry-pickupLocation" className="block text-xs font-black uppercase tracking-wider text-zinc-200 mb-1.5 flex items-center gap-1.5">
               <MapPin className="w-4 h-4 text-emerald-400 shrink-0" />
               Pickup Location *
             </label>
             <input
+              id="enquiry-pickupLocation"
               type="text"
               name="pickupLocation"
               value={formData.pickupLocation}
@@ -386,11 +387,12 @@ export default function EnquiryForm() {
           </div>
 
           <div>
-            <label className="block text-xs font-black uppercase tracking-wider text-zinc-200 mb-1.5 flex items-center gap-1.5">
+            <label htmlFor="enquiry-destination" className="block text-xs font-black uppercase tracking-wider text-zinc-200 mb-1.5 flex items-center gap-1.5">
               <MapPin className="w-4 h-4 text-sky-400 shrink-0" />
               Destination *
             </label>
             <input
+              id="enquiry-destination"
               type="text"
               name="destination"
               value={formData.destination}
@@ -404,11 +406,12 @@ export default function EnquiryForm() {
 
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
           <div>
-            <label className="block text-xs font-black uppercase tracking-wider text-zinc-200 mb-1.5 flex items-center gap-1.5">
+            <label htmlFor="enquiry-pickupDate" className="block text-xs font-black uppercase tracking-wider text-zinc-200 mb-1.5 flex items-center gap-1.5">
               <Calendar className="w-4 h-4 text-amber-400 shrink-0" />
               Pickup Date *
             </label>
             <input
+              id="enquiry-pickupDate"
               type="date"
               name="pickupDate"
               value={formData.pickupDate}
@@ -419,11 +422,12 @@ export default function EnquiryForm() {
           </div>
 
           <div>
-            <label className="block text-xs font-black uppercase tracking-wider text-zinc-200 mb-1.5 flex items-center gap-1.5">
+            <label htmlFor="enquiry-pickupTime" className="block text-xs font-black uppercase tracking-wider text-zinc-200 mb-1.5 flex items-center gap-1.5">
               <Clock className="w-4 h-4 text-amber-400 shrink-0" />
               Pickup Time *
             </label>
             <input
+              id="enquiry-pickupTime"
               type="time"
               name="pickupTime"
               value={formData.pickupTime}
@@ -434,11 +438,12 @@ export default function EnquiryForm() {
           </div>
 
           <div>
-            <label className="block text-xs font-black uppercase tracking-wider text-zinc-200 mb-1.5 flex items-center gap-1.5">
+            <label htmlFor="enquiry-flightNumber" className="block text-xs font-black uppercase tracking-wider text-zinc-200 mb-1.5 flex items-center gap-1.5">
               <Plane className="w-4 h-4 text-sky-400 shrink-0" />
               Flight Number (Optional)
             </label>
             <input
+              id="enquiry-flightNumber"
               type="text"
               name="flightNumber"
               value={formData.flightNumber}
@@ -451,8 +456,9 @@ export default function EnquiryForm() {
 
         {/* Return Trip Checkbox */}
         <div className="pt-1">
-          <label className="inline-flex items-center gap-2.5 cursor-pointer text-sm font-bold text-zinc-200">
+          <label htmlFor="enquiry-isReturnTrip" className="inline-flex items-center gap-2.5 cursor-pointer text-sm font-bold text-zinc-200">
             <input
+              id="enquiry-isReturnTrip"
               type="checkbox"
               name="isReturnTrip"
               checked={formData.isReturnTrip}
@@ -465,8 +471,9 @@ export default function EnquiryForm() {
           {formData.isReturnTrip && (
             <div className="mt-3 p-4 bg-zinc-950 border-2 border-zinc-800 rounded-xl grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div>
-                <label className="block text-xs font-black uppercase text-zinc-400 mb-1.5">Return Date</label>
+                <label htmlFor="enquiry-returnDate" className="block text-xs font-black uppercase text-zinc-400 mb-1.5">Return Date</label>
                 <input
+                  id="enquiry-returnDate"
                   type="date"
                   name="returnDate"
                   value={formData.returnDate}
@@ -475,8 +482,9 @@ export default function EnquiryForm() {
                 />
               </div>
               <div>
-                <label className="block text-xs font-black uppercase text-zinc-400 mb-1.5">Return Time</label>
+                <label htmlFor="enquiry-returnTime" className="block text-xs font-black uppercase text-zinc-400 mb-1.5">Return Time</label>
                 <input
+                  id="enquiry-returnTime"
                   type="time"
                   name="returnTime"
                   value={formData.returnTime}
@@ -500,11 +508,12 @@ export default function EnquiryForm() {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           <div>
-            <label className="block text-xs font-black uppercase tracking-wider text-zinc-200 mb-1.5 flex items-center gap-1.5">
+            <label htmlFor="enquiry-passengersCount" className="block text-xs font-black uppercase tracking-wider text-zinc-200 mb-1.5 flex items-center gap-1.5">
               <Users className="w-4 h-4 text-amber-400 shrink-0" />
               Total Passengers (Up to 11)
             </label>
             <select
+              id="enquiry-passengersCount"
               name="passengersCount"
               value={formData.passengersCount}
               onChange={handleChange}
@@ -519,11 +528,12 @@ export default function EnquiryForm() {
           </div>
 
           <div>
-            <label className="block text-xs font-black uppercase tracking-wider text-zinc-200 mb-1.5 flex items-center gap-1.5">
+            <label htmlFor="enquiry-luggageCount" className="block text-xs font-black uppercase tracking-wider text-zinc-200 mb-1.5 flex items-center gap-1.5">
               <Luggage className="w-4 h-4 text-amber-400 shrink-0" />
               Luggage Pieces
             </label>
             <select
+              id="enquiry-luggageCount"
               name="luggageCount"
               value={formData.luggageCount}
               onChange={handleChange}
@@ -552,10 +562,11 @@ export default function EnquiryForm() {
 
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
             <div>
-              <label className="block text-[10px] sm:text-[11px] font-black uppercase text-zinc-300 mb-1">
+              <label htmlFor="enquiry-rearFacingSeats" className="block text-[10px] sm:text-[11px] font-black uppercase text-zinc-300 mb-1">
                 Rear-Facing Capsule (0–12m)
               </label>
               <select
+                id="enquiry-rearFacingSeats"
                 name="rearFacingSeats"
                 value={formData.rearFacingSeats}
                 onChange={handleChange}
@@ -568,10 +579,11 @@ export default function EnquiryForm() {
             </div>
 
             <div>
-              <label className="block text-[10px] sm:text-[11px] font-black uppercase text-zinc-300 mb-1">
+              <label htmlFor="enquiry-forwardFacingSeats" className="block text-[10px] sm:text-[11px] font-black uppercase text-zinc-300 mb-1">
                 Forward-Facing (1–4 yrs)
               </label>
               <select
+                id="enquiry-forwardFacingSeats"
                 name="forwardFacingSeats"
                 value={formData.forwardFacingSeats}
                 onChange={handleChange}
@@ -585,10 +597,11 @@ export default function EnquiryForm() {
             </div>
 
             <div>
-              <label className="block text-[10px] sm:text-[11px] font-black uppercase text-zinc-300 mb-1">
+              <label htmlFor="enquiry-boosterSeats" className="block text-[10px] sm:text-[11px] font-black uppercase text-zinc-300 mb-1">
                 Booster Seat (4–8 yrs)
               </label>
               <select
+                id="enquiry-boosterSeats"
                 name="boosterSeats"
                 value={formData.boosterSeats}
                 onChange={handleChange}
@@ -653,10 +666,11 @@ export default function EnquiryForm() {
         </div>
 
         <div>
-          <label className="block text-xs font-black uppercase tracking-wider text-zinc-200 mb-1.5">
+          <label htmlFor="enquiry-accessibilityNotes" className="block text-xs font-black uppercase tracking-wider text-zinc-200 mb-1.5">
             Special Requests or Mobility Notes (Optional)
           </label>
           <textarea
+            id="enquiry-accessibilityNotes"
             name="accessibilityNotes"
             value={formData.accessibilityNotes}
             onChange={handleChange}
@@ -678,11 +692,12 @@ export default function EnquiryForm() {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           <div>
-            <label className="block text-xs font-black uppercase tracking-wider text-zinc-200 mb-1.5 flex items-center gap-1.5">
+            <label htmlFor="enquiry-name" className="block text-xs font-black uppercase tracking-wider text-zinc-200 mb-1.5 flex items-center gap-1.5">
               <User className="w-4 h-4 text-amber-400 shrink-0" />
               Full Name *
             </label>
             <input
+              id="enquiry-name"
               type="text"
               name="name"
               value={formData.name}
@@ -694,11 +709,12 @@ export default function EnquiryForm() {
           </div>
 
           <div>
-            <label className="block text-xs font-black uppercase tracking-wider text-zinc-200 mb-1.5 flex items-center gap-1.5">
+            <label htmlFor="enquiry-phone" className="block text-xs font-black uppercase tracking-wider text-zinc-200 mb-1.5 flex items-center gap-1.5">
               <Phone className="w-4 h-4 text-emerald-400 shrink-0" />
               Phone / WhatsApp Number *
             </label>
             <input
+              id="enquiry-phone"
               type="tel"
               name="phone"
               value={formData.phone}
