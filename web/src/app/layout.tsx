@@ -8,7 +8,6 @@ import Footer from "@/components/layout/Footer";
 import MobileContactBar from "@/components/layout/MobileContactBar";
 import FloatingWhatsApp from "@/components/layout/FloatingWhatsApp";
 import SmoothScrollProvider from "@/components/providers/SmoothScrollProvider";
-import { Analytics } from "@vercel/analytics/react";
 import { SITE_URL, SITE_CONFIG, CONFIG_FLAGS } from "@/config/site";
 import JsonLd from "@/components/seo/JsonLd";
 
@@ -304,7 +303,6 @@ export default function RootLayout({
           <Footer />
           <MobileContactBar />
           <FloatingWhatsApp />
-          <Analytics />
         </SmoothScrollProvider>
       </body>
     </html>
