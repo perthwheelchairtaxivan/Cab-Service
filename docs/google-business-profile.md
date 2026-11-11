@@ -3,7 +3,7 @@
 **Business Entity:** Perth Wheelchair Taxi Van  
 **Base Address:** Girrawheen WA 6064, Australia  
 **Dispatch Phone:** +61 493 252 766  
-**Website:** https://maxitaxi-five.vercel.app (update to production domain upon connection)  
+**Website:** https://www.perthwheelchairtaxivan.com.au  
 **Primary Email:** perthwheelchairtaxivan@gmail.com  
 
 ---
@@ -98,11 +98,11 @@ Publish 1 Google Update post every Tuesday morning:
 * **Week 2 (PTSS & NDIS Transport):**
   * *Headline:* "WA PTSS Smartcards & NDIS Transport Invoicing"
   * *Body:* "Effective 1 October 2025, paper TUSS vouchers have been replaced with WA PTSS smartcards (50% subsidy up to $25, or 75% up to $35 for wheelchair taxis). We also provide compliant, line-item tax invoices for NDIS self-managed and plan-managed participants under Core Support Category 02 [TODO: owner to confirm licence/registration]."
-  * *CTA Button:* "Book Online" (`https://maxitaxi-five.vercel.app/fares`)
+  * *CTA Button:* "Book Online" (`https://www.perthwheelchairtaxivan.com.au/fares`)
 * **Week 3 (Perth Airport T1–T4 Transfers):**
   * *Headline:* "24/7 Perth Airport Maxi Cab — Zero Luggage Compromises"
   * *Body:* "Travelling with up to 10 passengers or lots of oversized bags, surfboards, or mobility equipment? Skip the hassle of taking multiple rideshares. Our spacious maxi cabs offer fixed pricing, direct terminal curb pickup, and live flight arrival tracking for T1, T2, T3, and T4."
-  * *CTA Button:* "Book Online" (`https://maxitaxi-five.vercel.app/services/airport-transfers`)
+  * *CTA Button:* "Book Online" (`https://www.perthwheelchairtaxivan.com.au/services/airport-transfers`)
 * **Week 4 (Swan Valley & Group Events):**
   * *Headline:* "Private Swan Valley Wine Tours & Wedding Shuttles"
   * *Body:* "Plan your day in the Swan Valley without splitting the party. Enjoy comfortable 10-seater group travel with flexible multi-stop itineraries and room for wheelchair passengers to travel right beside friends and family. Contact us for custom hourly charter quotes."
@@ -145,6 +145,6 @@ Kind regards,
 Perth Wheelchair Taxi Van Dispatch Team
 Phone: +61 493 252 766
 Email: perthwheelchairtaxivan@gmail.com
-Web: https://maxitaxi-five.vercel.app
+Web: https://www.perthwheelchairtaxivan.com.au
 ```
 

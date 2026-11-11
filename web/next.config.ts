@@ -49,6 +49,17 @@ const nextConfig: NextConfig = {
   async redirects() {
     return [
       {
+        source: "/:path*",
+        has: [
+          {
+            type: "host",
+            value: "maxitaxi-five.vercel.app",
+          },
+        ],
+        destination: "https://www.perthwheelchairtaxivan.com.au/:path*",
+        permanent: true,
+      },
+      {
         source: "/services/local-everyday-transport",
         destination: "/services/tours-and-events-transport",
         permanent: true,

@@ -45,7 +45,7 @@ We operate accredited, rear-ramp wheelchair taxi vans equipped with:
 • 24/7 direct phone and WhatsApp dispatch (+61 493 252 766) with zero automated call center hold times
 
 We have created a step-by-step participant guide on navigating PTSS smartcards and booking accessible vehicles here:
-https://maxitaxi-five.vercel.app/guides/how-to-use-ptss-wheelchair-taxi-wa
+https://www.perthwheelchairtaxivan.com.au/guides/how-to-use-ptss-wheelchair-taxi-wa
 
 If your team maintains an accessible transport list or resources page for participants attending regular appointments across Greater Perth, we would be honored to be considered. 
 
@@ -58,7 +58,7 @@ Perth Wheelchair Taxi Van
 Girrawheen WA 6064
 Direct Dispatch: +61 493 252 766
 Email: perthwheelchairtaxivan@gmail.com
-Web: https://maxitaxi-five.vercel.app
+Web: https://www.perthwheelchairtaxivan.com.au
 ```
 
 ---
@@ -83,7 +83,7 @@ Our features:
 • Direct communication with owner-drivers via phone or WhatsApp
 
 If you provide couples or corporate clients with a recommended local transport list or "Getting Here & Away" guide, we would love to be included as a recommended local maxi cab and accessible transport option:
-https://maxitaxi-five.vercel.app/services/tours-and-events-transport
+https://www.perthwheelchairtaxivan.com.au/services/tours-and-events-transport
 
 Thank you for your time, and thank you for hosting so many wonderful celebrations in Western Australia.
 
@@ -115,7 +115,7 @@ Unlike standard on-demand rideshare apps where accessible vehicles are notorious
 4. Transparent fixed quotes or metered rates with all major credit cards accepted on-board
 
 You can view full vehicle dimensions, ramp specifications, and online booking options at:
-https://maxitaxi-five.vercel.app/services/airport-transfers
+https://www.perthwheelchairtaxivan.com.au/services/airport-transfers
 
 If your front desk or concierge team ever needs a dependable accessible vehicle on standby for your guests, please feel free to keep our direct 24/7 dispatch number on hand: +61 493 252 766.
 

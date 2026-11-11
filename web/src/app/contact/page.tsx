@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   description:
     "Contact Perth Wheelchair Taxi Van 24/7. Call or WhatsApp +61 493 252 766 for instant quotes on accessible vans, maxi taxis, and NDIS or airport bookings.",
   alternates: {
-    canonical: "/contact",
+    canonical: `${SITE_URL}/contact`,
   },
 };
 

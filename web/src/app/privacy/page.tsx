@@ -2,13 +2,14 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import SlideUp from "@/components/animations/SlideUp";
 import { ShieldCheck, ArrowLeft } from "lucide-react";
+import { SITE_URL } from "@/config/site";
 
 export const metadata: Metadata = {
   title: "Privacy Policy",
   description:
     "Privacy policy for Perth Wheelchair Taxi Van. How we protect passenger information, booking details, and payment data in accordance with Australian law.",
   alternates: {
-    canonical: "/privacy",
+    canonical: `${SITE_URL}/privacy`,
   },
 };
 

@@ -1,4 +1,4 @@
-const rawSiteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://maxitaxi-five.vercel.app";
+const rawSiteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://www.perthwheelchairtaxivan.com.au";
 export const SITE_URL = rawSiteUrl.replace(/\/+$/, "");
 
 export const BUSINESS_EMAIL =

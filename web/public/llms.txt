@@ -10,7 +10,7 @@
 - Phone / Voice: +61 493 252 766
 - WhatsApp: +61 493 252 766 (direct dispatcher)
 - Email: perthwheelchairtaxivan@gmail.com
-- Primary Website: https://maxitaxi-five.vercel.app
+- Primary Website: https://www.perthwheelchairtaxivan.com.au
 
 ## Vehicle & Accessibility Specifications
 - Vehicle Types: Long-wheelbase maxi taxi vans equipped with rear foldout ramps or hydraulic lifts [TODO: confirm exact vehicle make/model with owner].
@@ -25,15 +25,15 @@
 - Payment Types: EFTPOS, Visa, Mastercard, cash, and electronic PTSS card (subject to terminal confirmation). Upfront fixed quotes available on request.
 
 ## Core Services & Official URLs
-- Home: https://maxitaxi-five.vercel.app/
-- Wheelchair Accessible Taxi: https://maxitaxi-five.vercel.app/services/wheelchair-accessible-taxi
-- NDIS & Medical Transport: https://maxitaxi-five.vercel.app/services/medical-ndis-transport
-- Group Maxi Cab (10 Seater): https://maxitaxi-five.vercel.app/services/group-maxi-cab
-- Perth Airport Transfers (T1-T4): https://maxitaxi-five.vercel.app/services/airport-transfers
-- Baby Seat Maxi Taxi: https://maxitaxi-five.vercel.app/services/baby-seat-taxi
-- Swan Valley & Event Charters: https://maxitaxi-five.vercel.app/services/tours-and-events-transport
-- Service Areas Directory: https://maxitaxi-five.vercel.app/locations
-- Taxi Fares & Pricing Guide: https://maxitaxi-five.vercel.app/fares
-- PTSS & TUSS Guide: https://maxitaxi-five.vercel.app/guides/how-to-use-ptss-wheelchair-taxi-wa
-- Frequently Asked Questions: https://maxitaxi-five.vercel.app/faq
-- Booking & Quote Request: https://maxitaxi-five.vercel.app/enquire
+- Home: https://www.perthwheelchairtaxivan.com.au/
+- Wheelchair Accessible Taxi: https://www.perthwheelchairtaxivan.com.au/services/wheelchair-accessible-taxi
+- NDIS & Medical Transport: https://www.perthwheelchairtaxivan.com.au/services/medical-ndis-transport
+- Group Maxi Cab (10 Seater): https://www.perthwheelchairtaxivan.com.au/services/group-maxi-cab
+- Perth Airport Transfers (T1-T4): https://www.perthwheelchairtaxivan.com.au/services/airport-transfers
+- Baby Seat Maxi Taxi: https://www.perthwheelchairtaxivan.com.au/services/baby-seat-taxi
+- Swan Valley & Event Charters: https://www.perthwheelchairtaxivan.com.au/services/tours-and-events-transport
+- Service Areas Directory: https://www.perthwheelchairtaxivan.com.au/locations
+- Taxi Fares & Pricing Guide: https://www.perthwheelchairtaxivan.com.au/fares
+- PTSS & TUSS Guide: https://www.perthwheelchairtaxivan.com.au/guides/how-to-use-ptss-wheelchair-taxi-wa
+- Frequently Asked Questions: https://www.perthwheelchairtaxivan.com.au/faq
+- Booking & Quote Request: https://www.perthwheelchairtaxivan.com.au/enquire

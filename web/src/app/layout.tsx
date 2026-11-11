@@ -55,7 +55,7 @@ export const metadata: Metadata = {
     address: true,
   },
   alternates: {
-    canonical: SITE_URL,
+    canonical: `${SITE_URL}/`,
   },
   robots: {
     index: true,

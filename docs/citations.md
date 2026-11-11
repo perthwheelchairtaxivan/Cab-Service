@@ -16,7 +16,7 @@ To dominate local search ("near me", "Perth", map pack rankings), the business N
 | **Country** | Australia |
 | **Phone Number (AU format)** | 0493 252 766 |
 | **Phone Number (International)** | +61 493 252 766 |
-| **Website URL** | `https://maxitaxi-five.vercel.app` (update upon connecting custom domain) |
+| **Website URL** | `https://www.perthwheelchairtaxivan.com.au` |
 | **Email Address** | `perthwheelchairtaxivan@gmail.com` |
 | **ABN / Accreditation** | Department of Transport WA Accredited Passenger Transport Driver & Vehicle |
 | **Hours of Operation** | Monday to Sunday: 24 Hours (Open 24/7) |
@@ -94,5 +94,5 @@ Submit to these directories in order of authority and relevance:
 
 * **Quarterly Audit:** Review live listings every 3 months to ensure phone number, website link, and operational hours have not drifted or been flagged by automated bots.
 * **Never Change Suburb Name Arbitrarily:** Do not list as "Perth City" on one site and "Girrawheen" on another. Always state "Girrawheen WA 6064" as the operational base, serving all Greater Perth metropolitan local government areas.
-* **Keep Same URL Scheme:** Always link to `https://` with the exact root canonical URL (e.g., `https://perthwheelchairtaxi.com.au` or `https://maxitaxi-five.vercel.app`). Do not alternate between `http://`, `https://`, `www.` and non-`www`.
+* **Keep Same URL Scheme:** Always link to `https://` with the exact root canonical URL (e.g., `https://www.perthwheelchairtaxivan.com.au`). Do not alternate between `http://`, `https://`, `www.` and non-`www`.
 

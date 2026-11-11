@@ -4,7 +4,7 @@ import { SUBURBS_DATA } from "@/config/suburbs-data";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticRoutes = [
-    { path: "", changeFrequency: "daily" as const, priority: 1.0 },
+    { path: "/", changeFrequency: "daily" as const, priority: 1.0 },
     { path: "/services", changeFrequency: "weekly" as const, priority: 0.9 },
     { path: "/services/wheelchair-accessible-taxi", changeFrequency: "weekly" as const, priority: 0.95 },
     { path: "/services/medical-ndis-transport", changeFrequency: "weekly" as const, priority: 0.9 },

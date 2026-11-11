@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   description:
     "Swan Valley wine tours, wedding guest charters, and private event transport in Perth. 10-seater maxi cabs with wheelchair accessibility. Get a quote.",
   alternates: {
-    canonical: "/services/tours-and-events-transport",
+    canonical: `${SITE_URL}/services/tours-and-events-transport`,
   },
 };
 

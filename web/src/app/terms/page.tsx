@@ -2,13 +2,14 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import SlideUp from "@/components/animations/SlideUp";
 import { ShieldCheck, ArrowLeft } from "lucide-react";
+import { SITE_URL } from "@/config/site";
 
 export const metadata: Metadata = {
   title: "Terms & Conditions",
   description:
     "Terms and conditions for Perth Wheelchair Taxi Van bookings, cancellations, fixed fare guarantees, passenger safety, and commercial transport services.",
   alternates: {
-    canonical: "/terms",
+    canonical: `${SITE_URL}/terms`,
   },
 };
 

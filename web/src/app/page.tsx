@@ -33,13 +33,14 @@ import JsonLd from "@/components/seo/JsonLd";
 import { SITE_URL, SITE_CONFIG, CONFIG_FLAGS } from "@/config/site";
 
 export const metadata: Metadata = {
+  metadataBase: null,
   title: {
     absolute: "Wheelchair Taxi & Maxi Taxi Perth | Accessible Vans 24/7",
   },
   description:
     "Perth wheelchair accessible taxi vans and 10-seater maxi cabs with rear ramp or lift access. WA PTSS (formerly TUSS) & NDIS transport options. Call or WhatsApp +61 493 252 766.",
   alternates: {
-    canonical: SITE_URL,
+    canonical: "https://www.perthwheelchairtaxivan.com.au/",
   },
   openGraph: {
     title: "Wheelchair Taxi & Maxi Taxi Perth | Accessible Vans 24/7",

@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   description:
     "Book a wheelchair accessible taxi or 10-seater maxi cab across Perth. Transparent pricing, airport transfers, NDIS invoicing, and instant WhatsApp booking.",
   alternates: {
-    canonical: "/enquire",
+    canonical: `${SITE_URL}/enquire`,
   },
 };
 
