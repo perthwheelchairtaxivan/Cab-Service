@@ -67,7 +67,7 @@ export default function ToursAndEventsTransportPage() {
       <JsonLd data={breadcrumbSchema} />
 
       {/* Hero */}
-      <section className="bg-slate-900 text-white py-16 lg:py-24">
+      <section className="bg-slate-900 text-white pt-24 pb-16 sm:pt-28 lg:pt-32 lg:pb-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl">
             <SlideUp>
