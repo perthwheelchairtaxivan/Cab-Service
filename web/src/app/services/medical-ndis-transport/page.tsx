@@ -2,6 +2,7 @@ import { HeartPulse, CheckCircle2, ShieldCheck, FileText, Phone, ArrowRight, Hos
 import WhatsAppIcon from "@/components/icons/WhatsAppIcon";
 import type { Metadata } from "next";
 import Link from "next/link";
+import Breadcrumbs from "@/components/ui/Breadcrumbs";
 import SlideUp from "@/components/animations/SlideUp";
 import RelatedServices from "@/components/services/RelatedServices";
 import JsonLd from "@/components/seo/JsonLd";
@@ -94,6 +95,15 @@ export default function MedicalNDISPage() {
       <section className="relative pt-28 pb-12 sm:pt-36 sm:pb-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full border-b border-zinc-900">
         <div className="max-w-4xl mx-auto text-center">
           <SlideUp>
+            <Breadcrumbs
+              items={[
+                { label: "Home", href: "/" },
+                { label: "Services", href: "/services" },
+                { label: "NDIS & Medical Transport", href: "/services/medical-ndis-transport" },
+              ]}
+              align="center"
+              className="mb-4"
+            />
             <span className="text-xs font-black text-rose-400 uppercase tracking-[0.2em] mb-3 block">
               Compassionate Clinical Transport
             </span>

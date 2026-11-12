@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import EnquiryForm from "@/components/booking/EnquiryForm";
 import BackButton from "@/components/ui/BackButton";
 import JsonLd from "@/components/seo/JsonLd";
+import Breadcrumbs from "@/components/ui/Breadcrumbs";
 import { SITE_URL } from "@/config/site";
 
 export const metadata: Metadata = {
@@ -50,6 +51,14 @@ export default function EnquirePage() {
         </div>
 
         <div className="relative z-10 text-center max-w-3xl mx-auto">
+          <Breadcrumbs
+            items={[
+              { label: "Home", href: "/" },
+              { label: "Book a Ride", href: "/enquire" },
+            ]}
+            align="center"
+            className="mb-4"
+          />
           <h1 className="text-3xl sm:text-5xl lg:text-6xl font-black uppercase tracking-tight leading-[0.95] mb-3 text-white">
             Book a Wheelchair Taxi or Maxi Cab
           </h1>

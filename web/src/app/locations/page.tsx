@@ -4,6 +4,7 @@ import { ArrowRight, Hospital, Plane, Phone } from "lucide-react";
 import SlideUp from "@/components/animations/SlideUp";
 import PerthLocationsRoadmap from "@/components/locations/PerthLocationsRoadmap";
 import JsonLd from "@/components/seo/JsonLd";
+import Breadcrumbs from "@/components/ui/Breadcrumbs";
 import { SUBURBS_DATA } from "@/config/suburbs-data";
 import { SITE_URL, SITE_CONFIG } from "@/config/site";
 
@@ -80,6 +81,14 @@ export default function LocationsPage() {
       <section className="relative pt-28 pb-12 sm:pt-36 sm:pb-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full text-center border-b border-zinc-900">
         <div className="relative z-10 max-w-4xl mx-auto">
           <SlideUp>
+            <Breadcrumbs
+              items={[
+                { label: "Home", href: "/" },
+                { label: "Service Areas", href: "/locations" },
+              ]}
+              align="center"
+              className="mb-4"
+            />
             <span className="text-xs font-black text-amber-400 uppercase tracking-[0.2em] mb-3 block">
               Metropolitan Perth Coverage
             </span>

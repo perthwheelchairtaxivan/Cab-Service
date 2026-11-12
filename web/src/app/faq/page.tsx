@@ -5,6 +5,7 @@ import SlideUp from "@/components/animations/SlideUp";
 import WhatsAppIcon from "@/components/icons/WhatsAppIcon";
 import GmailIcon from "@/components/icons/GmailIcon";
 import JsonLd from "@/components/seo/JsonLd";
+import Breadcrumbs from "@/components/ui/Breadcrumbs";
 import { defaultFAQs } from "@/config/faqs";
 import FAQAccordion from "@/components/services/FAQAccordion";
 import { SITE_URL, BUSINESS_EMAIL, PHONE_NUMBER } from "@/config/site";
@@ -59,6 +60,13 @@ export default function FAQPage() {
       <section className="bg-slate-900 text-white py-16 lg:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SlideUp className="max-w-3xl">
+            <Breadcrumbs
+              items={[
+                { label: "Home", href: "/" },
+                { label: "FAQs", href: "/faq" },
+              ]}
+              className="mb-4"
+            />
             <span className="inline-block bg-white/10 text-slate-300 text-xs font-semibold px-3 py-1 rounded-full mb-4">
               Help Center &amp; Passenger FAQs
             </span>

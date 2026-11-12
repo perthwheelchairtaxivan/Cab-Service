@@ -4,6 +4,7 @@ import WhatsAppIcon from "@/components/icons/WhatsAppIcon";
 import GmailIcon from "@/components/icons/GmailIcon";
 import ContactForm from "@/components/contact/ContactForm";
 import JsonLd from "@/components/seo/JsonLd";
+import Breadcrumbs from "@/components/ui/Breadcrumbs";
 import { SITE_URL, BUSINESS_EMAIL, PHONE_NUMBER } from "@/config/site";
 
 export const metadata: Metadata = {
@@ -69,6 +70,14 @@ export default function ContactPage() {
         <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[500px] h-[220px] bg-amber-400/15 blur-[130px] pointer-events-none rounded-full" />
 
         <div className="relative z-10 max-w-3xl mx-auto">
+          <Breadcrumbs
+            items={[
+              { label: "Home", href: "/" },
+              { label: "Contact", href: "/contact" },
+            ]}
+            align="center"
+            className="mb-4"
+          />
           <h1 className="text-3xl sm:text-5xl lg:text-6xl font-black uppercase tracking-tight leading-[0.95] mb-4 text-white">
             Contact Perth <span className="text-amber-400">Wheelchair Taxi Van</span>
           </h1>

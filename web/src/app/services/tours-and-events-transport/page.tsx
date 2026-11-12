@@ -5,6 +5,7 @@ import Link from "next/link";
 import SlideUp from "@/components/animations/SlideUp";
 import RelatedServices from "@/components/services/RelatedServices";
 import JsonLd from "@/components/seo/JsonLd";
+import Breadcrumbs from "@/components/ui/Breadcrumbs";
 import { SITE_URL } from "@/config/site";
 
 export const metadata: Metadata = {
@@ -70,6 +71,14 @@ export default function ToursAndEventsTransportPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl">
             <SlideUp>
+              <Breadcrumbs
+                items={[
+                  { label: "Home", href: "/" },
+                  { label: "Services", href: "/services" },
+                  { label: "Tours & Events Transport", href: "/services/tours-and-events-transport" },
+                ]}
+                className="mb-4"
+              />
               <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-violet-500/20 text-violet-300 text-xs sm:text-sm font-semibold mb-6 border border-violet-500/30">
                 <Sparkles className="w-4 h-4" />
                 <span>Special Charters &amp; Perth Events</span>
