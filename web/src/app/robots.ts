@@ -6,7 +6,7 @@ export default function robots(): MetadataRoute.Robots {
     rules: [
       {
         userAgent: "*",
-        allow: "/",
+        allow: ["/", "/_next/static/"],
         disallow: ["/api/", "/enquire?*"],
       },
       {
@@ -23,7 +23,7 @@ export default function robots(): MetadataRoute.Robots {
           "Claude-SearchBot",
           "ClaudeBot",
         ],
-        allow: "/",
+        allow: ["/", "/_next/static/"],
         disallow: ["/api/"],
       },
       {
