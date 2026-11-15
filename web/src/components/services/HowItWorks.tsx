@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { FileText, CheckCircle2, MapPin, Smile, ArrowUpRight } from "lucide-react";
 import Link from "next/link";
 
@@ -42,15 +42,6 @@ const steps = [
 export default function HowItWorks() {
   const [activeIndex, setActiveIndex] = useState(0);
 
-  // Automatic sequential animation loop across steps (faster 1.8s interval)
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setActiveIndex((prev) => (prev + 1) % steps.length);
-    }, 1800);
-
-    return () => clearInterval(timer);
-  }, []);
-
   return (
     <section className="bg-zinc-950 border-b-4 border-zinc-800 py-10 sm:py-20 px-4 sm:px-10 lg:px-16">
       <div className="max-w-7xl mx-auto">
@@ -82,6 +73,7 @@ export default function HowItWorks() {
               <div
                 key={i}
                 onClick={() => setActiveIndex(i)}
+                onMouseEnter={() => setActiveIndex(i)}
                 className={`group relative p-4 sm:p-8 ${
                   i % 2 === 0 ? "border-r-2" : "border-r-0 xl:border-r-2"
                 } ${
