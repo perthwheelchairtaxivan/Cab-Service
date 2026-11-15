@@ -1,8 +1,19 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import SlideUp from "@/components/animations/SlideUp";
+import JsonLd from "@/components/seo/JsonLd";
+import Breadcrumbs from "@/components/ui/Breadcrumbs";
 import { ShieldCheck, ArrowLeft } from "lucide-react";
 import { SITE_URL } from "@/config/site";
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Home", item: SITE_URL },
+    { "@type": "ListItem", position: 2, name: "Privacy Policy", item: `${SITE_URL}/privacy` },
+  ],
+};
 
 export const metadata: Metadata = {
   title: "Privacy Policy",
@@ -16,10 +27,18 @@ export const metadata: Metadata = {
 export default function PrivacyPolicyPage() {
   return (
     <div className="flex flex-col w-full bg-slate-50 min-h-screen">
+      <JsonLd data={breadcrumbSchema} />
       {/* Header */}
       <section className="bg-slate-900 text-white pt-28 pb-16 lg:pt-36 lg:pb-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <SlideUp>
+            <Breadcrumbs
+              items={[
+                { label: "Home", href: "/" },
+                { label: "Privacy Policy", href: "/privacy" },
+              ]}
+              className="mb-4"
+            />
             <Link
               href="/"
               className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-amber-400 hover:text-amber-300 mb-6 transition-colors"

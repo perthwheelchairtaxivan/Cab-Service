@@ -3,6 +3,7 @@ import Link from "next/link";
 import { BookOpen, ArrowRight, ShieldCheck, Accessibility, FileText, Users } from "lucide-react";
 import SlideUp from "@/components/animations/SlideUp";
 import JsonLd from "@/components/seo/JsonLd";
+import Breadcrumbs from "@/components/ui/Breadcrumbs";
 import { SITE_URL, SITE_CONFIG } from "@/config/site";
 
 export const metadata: Metadata = {
@@ -97,6 +98,14 @@ export default function GuidesHubPage() {
       <section className="relative pt-28 pb-12 sm:pt-36 sm:pb-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full border-b border-zinc-900">
         <div className="max-w-3xl mx-auto text-center">
           <SlideUp>
+            <Breadcrumbs
+              items={[
+                { label: "Home", href: "/" },
+                { label: "Transport Guides", href: "/guides" },
+              ]}
+              align="center"
+              className="mb-4"
+            />
             <span className="text-xs font-black text-amber-400 uppercase tracking-[0.2em] mb-3 block">
               Evidence-First Passenger Advice
             </span>

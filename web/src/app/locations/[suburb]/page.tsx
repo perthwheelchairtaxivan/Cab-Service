@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
+import Breadcrumbs from "@/components/ui/Breadcrumbs";
 import {
   ShieldCheck,
   MapPin,
@@ -120,6 +121,15 @@ export default async function SuburbPage({ params }: Props) {
       <section className="relative pt-28 pb-12 sm:pt-36 sm:pb-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full border-b border-zinc-900">
         <div className="max-w-4xl mx-auto text-center">
           <SlideUp>
+            <Breadcrumbs
+              items={[
+                { label: "Home", href: "/" },
+                { label: "Locations", href: "/locations" },
+                { label: data.name, href: `/locations/${data.slug}` },
+              ]}
+              align="center"
+              className="mb-4"
+            />
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-400/10 border border-amber-400/30 text-amber-400 text-xs font-bold uppercase tracking-wider mb-4">
               <MapPin className="w-3.5 h-3.5" aria-hidden="true" />
               <span>Serving {data.name} &amp; Surrounds</span>

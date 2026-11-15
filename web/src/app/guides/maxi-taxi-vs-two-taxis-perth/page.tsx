@@ -3,6 +3,7 @@ import Link from "next/link";
 import { ArrowRight, CheckCircle2, Users, DollarSign, Luggage, Plane } from "lucide-react";
 import SlideUp from "@/components/animations/SlideUp";
 import JsonLd from "@/components/seo/JsonLd";
+import Breadcrumbs from "@/components/ui/Breadcrumbs";
 import { SITE_URL, SITE_CONFIG } from "@/config/site";
 
 export const metadata: Metadata = {
@@ -76,6 +77,17 @@ export default function MaxiTaxiVsTwoTaxisPage() {
 
       <header className="relative pt-28 pb-12 sm:pt-36 sm:pb-16 px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto w-full border-b border-zinc-900">
         <SlideUp>
+          <Breadcrumbs
+            items={[
+              { label: "Home", href: "/" },
+              { label: "Guides", href: "/guides" },
+              {
+                label: "Maxi Taxi vs Two Taxis in Perth",
+                href: "/guides/maxi-taxi-vs-two-taxis-perth",
+              },
+            ]}
+            className="mb-4"
+          />
           <div className="flex items-center gap-2 mb-3">
             <span className="text-xs font-black text-amber-400 uppercase tracking-widest bg-amber-400/10 px-3 py-1 rounded-full border border-amber-400/20">
               Group Transport Advice

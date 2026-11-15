@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Breadcrumbs from "@/components/ui/Breadcrumbs";
 import {
   Plane,
   Accessibility,
@@ -136,6 +137,14 @@ export default function ServicesPage() {
       <section className="relative pt-28 pb-12 sm:pt-36 sm:pb-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full border-b border-zinc-900">
         <div className="max-w-4xl mx-auto text-center">
           <SlideUp>
+            <Breadcrumbs
+              items={[
+                { label: "Home", href: "/" },
+                { label: "Services", href: "/services" },
+              ]}
+              align="center"
+              className="mb-4"
+            />
             <span className="text-xs font-black text-amber-400 uppercase tracking-[0.2em] mb-3 block">
               Fleet &amp; Accessible Transport
             </span>

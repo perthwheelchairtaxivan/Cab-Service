@@ -13,7 +13,18 @@ import FleetGallery from "@/components/about/FleetGallery";
 
 import Image from "next/image";
 import Link from "next/link";
+import JsonLd from "@/components/seo/JsonLd";
+import Breadcrumbs from "@/components/ui/Breadcrumbs";
 import { SITE_URL, CONFIG_FLAGS } from "@/config/site";
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Home", item: SITE_URL },
+    { "@type": "ListItem", position: 2, name: "About Us", item: `${SITE_URL}/about` },
+  ],
+};
 
 export const metadata: Metadata = {
   title: "About Us",
@@ -27,6 +38,7 @@ export const metadata: Metadata = {
 export default function AboutPage() {
   return (
     <div className="flex flex-col w-full bg-black min-h-screen text-white overflow-x-hidden selection:bg-amber-400 selection:text-black">
+      <JsonLd data={breadcrumbSchema} />
 
       {/* ═════════════════════════════════════════════════════════════
           1. ABOUT PAGE HEADER — Built with Semantic HTML / SEO Architecture
@@ -58,6 +70,13 @@ export default function AboutPage() {
         {/* Real Semantic SEO Content Container */}
         <div className="relative z-10 max-w-7xl mx-auto px-6 sm:px-10 lg:px-16 w-full py-2 sm:py-8">
           <div className="max-w-2xl">
+            <Breadcrumbs
+              items={[
+                { label: "Home", href: "/" },
+                { label: "About Us", href: "/about" },
+              ]}
+              className="mb-4"
+            />
             {/* Primary SEO Heading <h1> */}
             <SlideUp delay={0.05}>
               <h1 className="text-[clamp(3.75rem,12vw,8rem)] font-black uppercase leading-[0.88] tracking-tighter select-none">
