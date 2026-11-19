@@ -20,7 +20,6 @@ import {
   FileText,
   Accessibility,
 } from "lucide-react";
-import FadeIn from "@/components/animations/FadeIn";
 import SlideUp from "@/components/animations/SlideUp";
 import FAQAccordion from "@/components/services/FAQAccordion";
 import { defaultFAQs } from "@/config/faqs";
@@ -115,8 +114,7 @@ export default function Home() {
             alt="Wheelchair accessible maxi taxi van with rear hydraulic lift in Perth WA"
             fill
             priority
-            quality={85}
-            sizes="(max-width: 640px) 100vw, (max-width: 1200px) 100vw, 1920px"
+            sizes="100vw"
             className="object-cover object-[70%_center] lg:object-center brightness-[0.95] sm:brightness-105"
           />
           {/* Subtle top header gradient so navbar text stays crisp */}
@@ -167,36 +165,34 @@ export default function Home() {
 
         {/* Bottom Action Bar */}
         <div className="relative z-10 w-full max-w-7xl mx-auto px-5 sm:px-8 lg:px-12">
-          <FadeIn delay={0.15} className="w-full">
-            <div className="flex flex-row sm:flex-wrap items-center gap-2 sm:gap-5 pb-1 sm:pb-2 w-full max-w-sm sm:max-w-none">
-              {/* Book Now Button */}
-              <Link
-                href="/enquire"
-                className="inline-flex items-center justify-center gap-2 sm:gap-3 bg-amber-400 hover:bg-amber-300 text-black font-extrabold text-xs sm:text-base px-4 sm:px-8 py-2 sm:py-4 rounded-full shadow-[0_4px_16px_rgba(251,191,36,0.35)] sm:shadow-[0_8px_24px_rgba(251,191,36,0.45)] hover:shadow-[0_12px_28px_rgba(251,191,36,0.6)] hover:scale-105 active:scale-95 transition-all text-center whitespace-nowrap shrink-0"
-              >
-                <span>Book / Request Quote</span>
-                <div className="w-4 h-4 sm:w-7 sm:h-7 rounded-full bg-black flex items-center justify-center text-white shrink-0" aria-hidden="true">
-                  <ArrowRight className="w-2.5 h-2.5 sm:w-4 sm:h-4" />
-                </div>
-              </Link>
+          <div className="flex flex-row sm:flex-wrap items-center gap-2 sm:gap-5 pb-1 sm:pb-2 w-full max-w-sm sm:max-w-none">
+            {/* Book Now Button */}
+            <Link
+              href="/enquire"
+              className="inline-flex items-center justify-center gap-2 sm:gap-3 bg-amber-400 hover:bg-amber-300 text-black font-extrabold text-xs sm:text-base px-4 sm:px-8 py-2 sm:py-4 rounded-full shadow-[0_4px_16px_rgba(251,191,36,0.35)] sm:shadow-[0_8px_24px_rgba(251,191,36,0.45)] hover:shadow-[0_12px_28px_rgba(251,191,36,0.6)] hover:scale-105 active:scale-95 transition-all text-center whitespace-nowrap shrink-0"
+            >
+              <span>Book / Request Quote</span>
+              <div className="w-4 h-4 sm:w-7 sm:h-7 rounded-full bg-black flex items-center justify-center text-white shrink-0" aria-hidden="true">
+                <ArrowRight className="w-2.5 h-2.5 sm:w-4 sm:h-4" />
+              </div>
+            </Link>
 
-              {/* 24/7 Support Call Pill */}
-              <a
-                href={SITE_CONFIG.phoneTel}
-                className="inline-flex items-center justify-center gap-2 sm:gap-3 group backdrop-blur-md bg-black/60 sm:bg-black/50 border border-white/20 px-2.5 sm:px-5 py-1.5 sm:py-3.5 rounded-full hover:bg-black/70 transition-colors shadow-md sm:shadow-lg whitespace-nowrap shrink-0"
-              >
-                <div className="w-5 h-5 sm:w-9 sm:h-9 rounded-full bg-amber-400/20 border border-amber-400 flex items-center justify-center text-amber-400 group-hover:scale-110 transition-transform shrink-0" aria-hidden="true">
-                  <Clock className="w-2.5 h-2.5 sm:w-4.5 sm:h-4.5" />
-                </div>
-                <div className="flex flex-col text-left leading-none sm:leading-normal">
-                  <span className="text-[9px] sm:text-[11px] text-white/70 font-semibold sm:font-medium">Direct Driver (24/7)</span>
-                  <span className="text-[10px] sm:text-sm md:text-base font-bold text-white tracking-wide group-hover:text-amber-400 transition-colors mt-0.5 sm:mt-0">
-                    {SITE_CONFIG.phone}
-                  </span>
-                </div>
-              </a>
-            </div>
-          </FadeIn>
+            {/* 24/7 Support Call Pill */}
+            <a
+              href={SITE_CONFIG.phoneTel}
+              className="inline-flex items-center justify-center gap-2 sm:gap-3 group backdrop-blur-md bg-black/60 sm:bg-black/50 border border-white/20 px-2.5 sm:px-5 py-1.5 sm:py-3.5 rounded-full hover:bg-black/70 transition-colors shadow-md sm:shadow-lg whitespace-nowrap shrink-0"
+            >
+              <div className="w-5 h-5 sm:w-9 sm:h-9 rounded-full bg-amber-400/20 border border-amber-400 flex items-center justify-center text-amber-400 group-hover:scale-110 transition-transform shrink-0" aria-hidden="true">
+                <Clock className="w-2.5 h-2.5 sm:w-4.5 sm:h-4.5" />
+              </div>
+              <div className="flex flex-col text-left leading-none sm:leading-normal">
+                <span className="text-[9px] sm:text-[11px] text-white/70 font-semibold sm:font-medium">Direct Driver (24/7)</span>
+                <span className="text-[10px] sm:text-sm md:text-base font-bold text-white tracking-wide group-hover:text-amber-400 transition-colors mt-0.5 sm:mt-0">
+                  {SITE_CONFIG.phone}
+                </span>
+              </div>
+            </a>
+          </div>
         </div>
       </section>
 

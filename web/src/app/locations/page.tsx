@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowRight, Hospital, Plane, Phone } from "lucide-react";
-import SlideUp from "@/components/animations/SlideUp";
 import PerthLocationsRoadmap from "@/components/locations/PerthLocationsRoadmap";
 import JsonLd from "@/components/seo/JsonLd";
 import Breadcrumbs from "@/components/ui/Breadcrumbs";
@@ -80,43 +79,41 @@ export default function LocationsPage() {
       {/* ── 1. Header Section ── */}
       <section className="relative pt-28 pb-12 sm:pt-36 sm:pb-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full text-center border-b border-zinc-900">
         <div className="relative z-10 max-w-4xl mx-auto">
-          <SlideUp>
-            <Breadcrumbs
-              items={[
-                { label: "Home", href: "/" },
-                { label: "Service Areas", href: "/locations" },
-              ]}
-              align="center"
-              className="mb-4"
-            />
-            <span className="text-xs font-black text-amber-400 uppercase tracking-[0.2em] mb-3 block">
-              Metropolitan Perth Coverage
-            </span>
-            <h1 className="text-3xl sm:text-5xl lg:text-6xl font-black uppercase tracking-tight leading-[1.02] mb-4 text-white">
-              Wheelchair Taxi &amp; Maxi Cab <span className="text-amber-400">Service Areas in Perth</span>
-            </h1>
-            {/* Answer-first 50-word opening paragraph */}
-            <p className="text-sm sm:text-base text-zinc-300 leading-relaxed max-w-3xl mx-auto font-normal">
-              Based in Girrawheen WA 6064, Perth Wheelchair Taxi Van delivers 24/7 accessible passenger transport across metropolitan Perth and a 20 km surrounding radius. We service hospitals, residential care, shopping precincts, and Perth Airport Terminals T1–T4 with rear ramp or lift access vans and 10-seater maxi cabs.
-            </p>
+          <Breadcrumbs
+            items={[
+              { label: "Home", href: "/" },
+              { label: "Service Areas", href: "/locations" },
+            ]}
+            align="center"
+            className="mb-4"
+          />
+          <span className="text-xs font-black text-amber-400 uppercase tracking-[0.2em] mb-3 block">
+            Metropolitan Perth Coverage
+          </span>
+          <h1 className="text-3xl sm:text-5xl lg:text-6xl font-black uppercase tracking-tight leading-[1.02] mb-4 text-white">
+            Wheelchair Taxi &amp; Maxi Cab <span className="text-amber-400">Service Areas in Perth</span>
+          </h1>
+          {/* Answer-first 50-word opening paragraph */}
+          <p className="text-sm sm:text-base text-zinc-300 leading-relaxed max-w-3xl mx-auto font-normal">
+            Based in Girrawheen WA 6064, Perth Wheelchair Taxi Van delivers 24/7 accessible passenger transport across metropolitan Perth and a 20 km surrounding radius. We service hospitals, residential care, shopping precincts, and Perth Airport Terminals T1–T4 with rear ramp or lift access vans and 10-seater maxi cabs.
+          </p>
 
-            <div className="mt-6 flex flex-wrap items-center justify-center gap-3">
-              <Link
-                href="/enquire"
-                className="inline-flex items-center gap-2 bg-amber-400 hover:bg-amber-300 text-black font-black text-xs uppercase tracking-wider px-6 py-3.5 rounded-full transition-transform hover:scale-105"
-              >
-                <span>Book / Request Fixed Quote</span>
-                <ArrowRight className="w-4 h-4" aria-hidden="true" />
-              </Link>
-              <a
-                href={SITE_CONFIG.phoneTel}
-                className="inline-flex items-center gap-2 bg-zinc-900 hover:bg-zinc-800 text-white font-bold text-xs uppercase tracking-wider px-5 py-3.5 rounded-full border border-zinc-700 transition-colors"
-              >
-                <Phone className="w-4 h-4 text-amber-400" aria-hidden="true" />
-                <span>Call {SITE_CONFIG.phone}</span>
-              </a>
-            </div>
-          </SlideUp>
+          <div className="mt-6 flex flex-wrap items-center justify-center gap-3">
+            <Link
+              href="/enquire"
+              className="inline-flex items-center gap-2 bg-amber-400 hover:bg-amber-300 text-black font-black text-xs uppercase tracking-wider px-6 py-3.5 rounded-full transition-transform hover:scale-105"
+            >
+              <span>Book / Request Fixed Quote</span>
+              <ArrowRight className="w-4 h-4" aria-hidden="true" />
+            </Link>
+            <a
+              href={SITE_CONFIG.phoneTel}
+              className="inline-flex items-center gap-2 bg-zinc-900 hover:bg-zinc-800 text-white font-bold text-xs uppercase tracking-wider px-5 py-3.5 rounded-full border border-zinc-700 transition-colors"
+            >
+              <Phone className="w-4 h-4 text-amber-400" aria-hidden="true" />
+              <span>Call {SITE_CONFIG.phone}</span>
+            </a>
+          </div>
         </div>
       </section>
 

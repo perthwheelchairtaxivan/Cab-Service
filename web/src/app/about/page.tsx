@@ -47,15 +47,14 @@ export default function AboutPage() {
 
         {/* Responsive Background Artwork (WA map, Maxi van outline, pins, circuit tracks) */}
         <div className="absolute inset-0 pointer-events-none select-none overflow-hidden">
-          <picture className="w-full h-full block">
-            <source srcSet="/images/about-hero-backdrop-2x.png" media="(min-width: 640px)" />
-            <img
-              src="/images/about-hero-backdrop.png"
-              alt=""
-              aria-hidden="true"
-              className="w-full h-full object-cover object-right md:object-center opacity-90 sm:opacity-95"
-            />
-          </picture>
+          <Image
+            src="/images/about-hero-backdrop-2x.png"
+            alt="Perth Wheelchair Taxi Van fleet background artwork"
+            fill
+            priority
+            sizes="100vw"
+            className="object-cover object-right md:object-center opacity-90 sm:opacity-95"
+          />
           <div className="absolute inset-0 bg-gradient-to-r from-[#07090e] via-[#07090e]/60 to-transparent w-full md:w-3/5" />
         </div>
 
@@ -78,27 +77,23 @@ export default function AboutPage() {
               className="mb-4"
             />
             {/* Primary SEO Heading <h1> */}
-            <SlideUp delay={0.05}>
-              <h1 className="text-[clamp(3.75rem,12vw,8rem)] font-black uppercase leading-[0.88] tracking-tighter select-none">
-                <span className="block text-white">ABOUT</span>
-                {" "}
-                <span className="block text-amber-400 mt-1">US</span>
-              </h1>
-            </SlideUp>
+            <h1 className="text-[clamp(3.75rem,12vw,8rem)] font-black uppercase leading-[0.88] tracking-tighter select-none">
+              <span className="block text-white">ABOUT</span>
+              {" "}
+              <span className="block text-amber-400 mt-1">US</span>
+            </h1>
 
             {/* Keyword-rich Tagline with highlighted spans */}
-            <SlideUp delay={0.15}>
-              <div className="mt-4 sm:mt-8 max-w-xl">
-                <p className="text-xs sm:text-sm md:text-base font-black uppercase tracking-wider text-white leading-relaxed">
-                  OVER <span className="text-amber-400">10 YEARS</span> OF RELIABLE, ACCESSIBLE &amp; DEDICATED
-                  <br className="hidden sm:inline" />
-                  {" "}PASSENGER CARE ACROSS <span className="text-amber-400">WESTERN AUSTRALIA</span>
-                </p>
-                <p className="mt-3 text-sm text-amber-300 font-semibold normal-case">
-                  Our vehicles are fully <Link href="/services/wheelchair-accessible-taxi" className="underline underline-offset-4 hover:text-white">wheelchair accessible</Link> with rear ramp or lift access.
-                </p>
-              </div>
-            </SlideUp>
+            <div className="mt-4 sm:mt-8 max-w-xl">
+              <p className="text-xs sm:text-sm md:text-base font-black uppercase tracking-wider text-white leading-relaxed">
+                OVER <span className="text-amber-400">10 YEARS</span> OF RELIABLE, ACCESSIBLE &amp; DEDICATED
+                <br className="hidden sm:inline" />
+                {" "}PASSENGER CARE ACROSS <span className="text-amber-400">WESTERN AUSTRALIA</span>
+              </p>
+              <p className="mt-3 text-sm text-amber-300 font-semibold normal-case">
+                Our vehicles are fully <Link href="/services/wheelchair-accessible-taxi" className="underline underline-offset-4 hover:text-white">wheelchair accessible</Link> with rear ramp or lift access.
+              </p>
+            </div>
           </div>
         </div>
       </section>
