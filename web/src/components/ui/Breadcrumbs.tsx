@@ -35,7 +35,7 @@ export default function Breadcrumbs({
         {items.map((item, idx) => {
           const isLast = idx === items.length - 1;
           return (
-            <li key={`${item.href}-${idx}`} className="inline-flex items-center gap-1.5 min-w-0">
+            <li key={`crumb-${idx}`} className="inline-flex items-center gap-1.5 min-w-0">
               {idx > 0 && (
                 <ChevronRight
                   className="w-3.5 h-3.5 text-zinc-500 shrink-0"
@@ -43,12 +43,13 @@ export default function Breadcrumbs({
                 />
               )}
               {isLast ? (
-                <span
+                <Link
+                  href={item.href}
                   aria-current="page"
-                  className="font-semibold text-zinc-200 truncate max-w-[260px] sm:max-w-none"
+                  className="font-semibold text-zinc-200 truncate max-w-[260px] sm:max-w-none hover:text-amber-400 transition-colors"
                 >
                   {item.label}
-                </span>
+                </Link>
               ) : (
                 <Link
                   href={item.href}

@@ -69,6 +69,42 @@ const nextConfig: NextConfig = {
         destination: "/guides/how-to-use-ptss-wheelchair-taxi-wa",
         permanent: true,
       },
+      // Permanent 301 redirects for legacy breadcrumb crawl URLs
+      {
+        source: "/contact-1",
+        destination: "/contact",
+        permanent: true,
+      },
+      {
+        source: "/faq-1",
+        destination: "/faq",
+        permanent: true,
+      },
+      {
+        source: "/locations-1",
+        destination: "/locations",
+        permanent: true,
+      },
+      {
+        source: "/guides-1",
+        destination: "/guides",
+        permanent: true,
+      },
+      {
+        source: "/guides/how-to-use-ptss-wheelchair-taxi-wa-2",
+        destination: "/guides/how-to-use-ptss-wheelchair-taxi-wa",
+        permanent: true,
+      },
+      {
+        source: "/about-1",
+        destination: "/about",
+        permanent: true,
+      },
+      {
+        source: "/services-1",
+        destination: "/services",
+        permanent: true,
+      },
     ];
   },
 };
